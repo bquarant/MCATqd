@@ -1,0 +1,495 @@
+/* load custom fonts… */
+  		@font-face{
+  			font-family: "BebasNeue";
+  			src: url("BebasNeue.otf") format("opentype");
+  		}
+  		hr{
+  		
+  			border-style: groove;
+  		}
+		header {
+			margin-top: 20px;
+			margin-left: 300px;
+			margin-right: 300px;
+			font-family: "Oswald", Helvetica, Arial, sans-serif;
+			color: #CA1E00;
+			font-size: 60px;
+			font-weight: 600;
+			text-decoration: none;
+			letter-spacing: -2px;
+			text-rendering: optimizeLegigibility;
+			display: block;
+			min-height: 70px; 
+			width: auto;
+			}
+		header a {
+			text-decoration: none;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 16px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			color: #000;
+		}
+		header a:hover {
+			color: #fff;
+		}
+		#links {
+		/*float: right; */
+        
+		}
+		#content{
+			margin-left: 300px;
+			margin-right: 300px;
+		}
+		#topSection{
+			display: table;
+			}
+		#firstRow{
+			display: table-row;
+			}
+		#topAdSpace{
+			display: table-cell;
+			}
+		#secondRow{
+			display: table-row;
+			}
+		#leftAdSpace{
+			display: table-cell;
+			}
+		#questionContentSpace{
+			padding-left: 140px;
+			padding-right: 220px;
+			width: 625;
+			height: 485;
+			}
+		#questionContentSpace h1 {
+			font-size: 55px;
+			font-family:"BebasNeue";
+			margin-bottom: 0;
+			padding-bottom: 0;
+			}
+		#questionContentSpace p {
+				font-size: 40px;
+				font-family:"BebasNeue";
+				margin-bottom: 0;
+				padding-bottom: 0;
+				}
+        #blogContentSpace{
+			padding-left: 140px;
+			padding-right: 220px;
+			width: 625;
+			height: 485;
+			display: table-cell;
+			font-family: "Oswald";
+			}
+		#blogContentSpace h1 {
+			font-size: 50px;
+			font-family:"BebasNeue";
+			margin-bottom: 0;
+			padding-bottom: 0;
+			}
+		#blogContentSpace p {
+				font-size: 40px;
+				font-family:"BebasNeue";
+				margin-bottom: 0;
+				padding-bottom: 0;
+				}
+		#rightAdSpace {
+			display: table-cell;
+			}
+		#bottomContentSpace {
+			display: table;
+            margin-left: 300px;
+			}
+		#recentPosts
+			{
+			position: relative;
+			width: 288px;
+			height: 288px;
+			display: table-cell;
+			padding-right: 10px;
+			}
+		#twitterFeed{
+			position: relative;
+			width: 288px;
+			height: 288px;
+			display: table-cell;
+			padding-right: 10px;
+			}
+		#calendar {
+			position: relative;
+			width: 288px;
+			height: 288px;
+			display: table-cell;
+			padding-right: 10px;
+			}
+		#recentPosts h4{
+				font-size: 28px;
+				font-family:"BebasNeue";
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		#twitterFeed h4{
+				font-size: 28px;
+				font-family:"BebasNeue";
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		#calendar h4{
+				font-size: 28px;
+				font-family:"BebasNeue";
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		#date{
+			padding-left: 200px;
+		}
+		footer{
+        margin-left: 300px;
+			padding-left: 125px;
+		}
+		footer p{
+			font-size: 10px;
+			font-family: "Helvetica", "Arial", sans-serif;
+			color: #000;
+		}
+		footer a{
+			text-decoration: none;
+			color: #888;
+		}
+		footer a:hover{
+			color: #000;
+		}
+		#quiz td
+		{
+			line-height: 22px;
+			color:fff;
+			font-family: 'Oswald', sans-serif;
+			font-size: 22px;
+			letter-spacing: 1px;
+			display: block;
+		}
+		a.signup_button{
+		  text-align: center;
+		  color: #fff;
+		  background: #CA1E00;
+		  font-weight: bold;
+		  padding: 5px;
+		}
+        a.signup_button:hover {
+		  background: #000;
+		}
+		.round {
+		  -moz-border-radius:    6px;
+		  -webkit-border-radius: 6px;
+		  border-radius:         6px;
+		}
+        #newUserContentSpace{
+			padding-left: 140px;
+			padding-right: 220px;
+			width: 625px;
+			height: 485px;
+			display: block;
+			font-family: "Oswald";
+         
+			}
+		#newUserContentSpace h1 {
+			font-size: 50px;
+			font-family:"BebasNeue";
+			margin-bottom: 0;
+			padding-bottom: 0;
+			}
+		#newUserContentSpace p {
+			font-family: 'Lobster Two', cursive;
+            font-size: 28px;
+            line-height: 110%;
+            border-top: 2px;
+            border-bottom: 2px;
+            border-color: #000;
+            background-color: yellow;
+            text-align: center;
+				}
+                
+        #sessionContentSpace{
+			padding-left: 140px;
+			padding-right: 220px;
+			width: 625px;
+			height: 485px;
+			display: block;
+			font-family: "Oswald";
+         
+			}
+		#sessionContentSpace h1 {
+			font-size: 50px;
+			font-family:"BebasNeue";
+			margin-bottom: 0;
+			padding-bottom: 0;
+			}
+		#sessionContentSpace p {
+			font-family: 'Lobster Two', cursive;
+            font-size: 28px;
+            line-height: 110%;
+            text-align: center;
+				}
+        #sessionContentSpace a {
+			text-decoration: none;
+            color: #CA1E00;
+				} 
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+#userContentSpace{
+			padding-left: 140px;
+			padding-right: 220px;
+			width: 625px;
+			height: 485px;
+			display: block;
+			font-family: "Oswald";
+			}
+#userContentSpace b {
+			font-size: 50px;
+			font-family:"BebasNeue";
+			margin-bottom: 0;
+			padding-bottom: 0;
+			}
+#userContentSpace h2 {
+			font-size: 44px;
+			font-family:"Oswald";
+			margin-bottom: 0;
+			padding-bottom: 0;
+			}
+#userContentSpace p {
+			font-family: 'Lobster Two', cursive;
+            font-size: 28px;
+            line-height: 110%;
+            border-top: 2px;
+            border-bottom: 2px;
+            border-color: #000;
+            background-color: yellow;
+            text-align: center;
+				}
+
+/* CSS Formatting for the Sessiong Log-in */
+form {
+margin-left: 200px;
+}
+input, textarea {
+
+padding: 9px;
+border: solid 1px #E5E5E5;
+outline 0;
+background: #FFFFFF;
+}
+
+textarea {
+width: 400px;
+max-width: 400px;
+height: 150px;
+line-height: 150%;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+border-color: #C9C9C9;
+}
+
+label {
+margin-left: 20px;
+color: #999999;
+}
+
+#session_submit {
+font-family:"BebasNeue";
+margin-left: 40px;
+margin-bottom: 0;
+padding-bottom: 0;
+width: auto;
+padding: 9px 15px;
+background: #999999;
+border: 4px;
+font-size: 50px;
+color: #FFFFFF;
+}
+#session_submit:hover{
+border-color: #000;
+}
+#user_submit {
+font-family:"BebasNeue";
+margin-left: 40px;
+margin-bottom: 0;
+padding-bottom: 0;
+width: auto;
+padding: 9px 15px;
+background: #999999;
+border: 4px;
+font-size: 50px;
+color: #FFFFFF;
+}
+#user_submit:hover{
+border-color: #000;
+}
+
+/* CSS3 for the Daily Quiz */
+#quiz form {
+margin: 0px;
+}
+
+#quiz input{
+color: #FFF;
+padding: 9px;
+border: solid 1px #E5E5E5;
+outline 0;
+background: #999;
+}
+#quiz label {
+font-family: "Oswald";
+font-size: 22px;
+line-height: 32px;
+color: #000;
+}
+
+#quiz h4{
+	font-family: "BebasNeue";
+	font-size: 28px;
+	line-height: 38px;
+}
+
+#answer_submit { 
+font-family:"BebasNeue";
+margin-left: 250px;
+margin-bottom: 0;
+padding-bottom: 0;
+width: auto;
+padding: 9px 15px;
+border: 4px;
+font-size: 50px;
+color: #FFFFFF;
+}
+
+/* Some styling for the correct and false Banners */
+#correctBanner{
+	margin-left: 350px;
+}
+#correctBanner h1{
+	font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    line-height: 110%;
+    background-color: #00BF06;
+    text-align: center;
+}
+
+#homeRedirect a{
+	font-family:"BebasNeue";
+	margin-left: 40px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	width: auto;
+	padding: 9px 15px;
+	background: #999999;
+	border: 4px;
+	font-size: 50px;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 350px;
+}
+
+#falseBanner{
+	margin-left: 350px;
+	border-top: 10px;
+    border-bottom: 10px;
+    border-color: #000;
+}
+#falseBanner h1{
+	font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    line-height: 110%;
+    border-top: 2px;
+    border-bottom: 2px;
+    border-color: #000;
+	color: #CA1E00;
+    text-align: center;
+}
+
+#tryAgain a{
+	font-family:"BebasNeue";
+	margin-left: 40px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	width: auto;
+	padding: 9px 15px;
+	background: #999999;
+	border: 4px;
+	font-size: 50px;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-left: 350px;
+}
+#aboutSpace{
+	margin-left: 220px;
+}
+#aboutSpace h1{
+	font-size: 50px;
+	font-family:"BebasNeue";
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-align: center;
+}
+#leaderboardSpace{
+	margin-left: 220px;
+}
+#leaderboardSpace h1 {
+	font-size: 50px;
+	font-family:"BebasNeue";
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-align: center;
+}

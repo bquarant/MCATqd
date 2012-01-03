@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  title: MyString
+  content: MyText
+  optionA: MyString
+  optionB: MyString
+  optionC: MyString
+  optionD: MyString
+
+two:
+  name: MyString
+  title: MyString
+  content: MyText
+  optionA: MyString
+  optionB: MyString
+  optionC: MyString
+  optionD: MyString

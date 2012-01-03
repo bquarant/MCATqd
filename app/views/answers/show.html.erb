@@ -1,0 +1,48 @@
+<div id="content">
+	<div id="topSection">
+		<div id="firstRow">
+			<div id="topAdSpace">
+				<!--	<img src="http://placehold.it/865x25"> -->
+			</div>
+		</div>
+		<div id="secondRow">
+			<div id="leftAdSpace">
+				<!-- <img src="http://placehold.it/120x485"> -->
+			</div>
+			<div id="answerSpace">
+				<% if @answer.correct? == true %>
+					<!--True, display Correct Banner! -->
+					<div id="correctBanner">
+						<h1>Correct!</h1>
+						<br><br><br>
+					</div>
+					<div id="homeRedirect">
+						<%= link_to "CHECK BACK QD", root_path %>
+					</div>
+				<% else %>
+					<!--False, shame them -->
+					<div id="falseBanner">
+						<h1>Wrong!</h1>
+						<br><br><br>
+					</div>
+					<div id="tryAgain">
+						<%= link_to "TRY AGAIN", root_path %>
+					</div>	
+				<%end%>
+				<div id="answerExplanation">
+					<!--Answer Explanation -->
+				</div>
+				<!-- 
+				Question: <%= @question.content %>
+				<br />
+				Answer: <%= @answer.option.text %>
+				<br />
+				Correct?: <%= @answer.correct? %>
+				-->
+			</div>
+			<aside id="rightAdSpace">
+			<!-- 	<img src="http://placehold.it/120x485"> -->
+			</aside>
+		</div>
+</div>
+</div>

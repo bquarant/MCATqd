@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<title>MCATqd</title>
+  	<style type="text/css">
+  	
+  		/* load custom fonts… */
+  		
+  		@font-face
+  		{
+  			font-family: "BebasNeue";
+  			src: url("BebasNeue.otf") format("opentype");
+  		}
+  		hr
+  		{
+  		
+  			border-style: groove;
+  		}
+		header {
+			margin-left: 5%;
+			margin-right: 5%;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: #CA1E00;
+			font-size: 60px;
+			font-weight: 600;
+			text-decoration: none;
+			letter-spacing: -2px;
+			text-rendering: optimizeLegigibility;
+			display: block;
+			min-height: 70px; 
+			width: auto;
+			}
+		header a
+		{
+			text-decoration: none;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 16px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			color: #888;
+		}
+		header a:hover
+		{
+			color: #000;
+		}
+		header code
+		{
+			font-family: Courier, monospace;
+			color: #000;
+			font-size: 12px;
+			font-weight: 300;
+			letter-spacing: 1px;
+			
+		}
+		#links
+		{
+			float: right;
+		}
+		#content
+		{
+			margin-left: 300px;
+			margin-right: 300px;
+		}
+		#topSection
+			{
+			display: table;
+			}
+		#firstRow
+			{
+			display: table-row;
+			}
+		#topAdSpace
+			{
+			display: table-cell;
+			}
+		#secondRow
+			{
+			display: table-row;
+			}
+		#leftAdSpace
+			{
+			display: table-cell;
+			}
+		#questionContentSpace
+			{
+			display: table-cell;
+			}
+		#rightAdSpace
+			{
+			display: table-cell;
+			}
+		#bottomContentSpace
+			{
+			display: table;
+			}
+		#recentPosts
+			{
+			position: relative;
+			width: 288px;
+			height: 288px;
+			display: table-cell;
+			padding-right: 10px;
+			}
+		#twitterFeed
+			{
+			position: relative;
+			width: 288px;
+			height: 288px;
+			display: table-cell;
+			padding-right: 10px;
+			}
+		#calendar
+			{
+			position: relative;
+			width: 288px;
+			height: 288px;
+			display: table-cell;
+			padding-right: 10px;
+			}
+		
+		#recentPosts h4
+			{
+				font-size: 28px;
+				font-family:"BebasNeue";
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		#twitterFeed h4
+			{
+				font-size: 28px;
+				font-family:"BebasNeue";
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		#calendar h4
+			{
+				font-size: 28px;
+				font-family:"BebasNeue";
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		footer
+		{
+			padding-left: 125px;
+		}
+		footer p
+		{
+			font-size: 10px;
+			font-family: "Helvetica", "Arial", sans-serif;
+			color: #000;
+		}
+		footer a
+		{
+			text-decoration: none;
+			color: #888;
+		}
+		footer a:hover
+		{
+			color: #000;
+		}
+	</style>
+	<script type="text/javascript">
+  		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-24240893-3']);
+ 		_gaq.push(['_trackPageview']);
+
+  		(function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+<body>
+
+	<header id="head">MCATqd.com   <code>coming soon.</code>
+		<span id="links"> <a href="http://mcatqd.com/index.html">Home</a> <a href="http://mcatqd.com/#">About</a> <a href="http://mcatqd.com/#"> Blog</a> <a href="http://mcatqd.com/#">Login</a></span>
+	</header>
+	
+<div id="content">
+	<div id="topSection">
+		<div id="firstRow"
+			<div id="topAdSpace">
+				<img src="http://placehold.it/865x25">
+			</div>
+		</div>
+		<div id="secondRow">
+		<aside id="leftAdSpace">
+			<img src="http://placehold.it/120x485">
+		</aside>
+		<section id="questionContentSpace">
+			<img src="http://placehold.it/625x485">
+		</section>
+		<aside id="rightAdSpace">
+			<img src="http://placehold.it/120x485">
+		</aside>
+		</div>
+	
+	<div id="bottomContentSpace">
+		<div id="recentPosts">
+			<h4>Recent Posts</h4>
+			<hr>
+			<p>Lorem ipsum..</p>
+			<!-- <img src="http://placehold.it/288"> -->
+		</div>
+		<div id="twitterFeed">
+			<h4>Twitter</h4>
+			<hr>
+			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+				<script>
+			new TWTR.Widget({
+  			version: 2,
+			type: 'profile',
+  			rpp: 4,
+  			interval: 6000,
+  			width: 288,
+  			height: 288,
+  			theme: {
+    		shell: {
+      				background: '#fff',
+      					color: '#000'
+    					},
+    		tweets: {
+      					background: '#fff',
+  	    				color: '#000',
+      					links: '#CA1E00'
+    					}
+  					},
+  			features: {
+    				scrollbar: false,
+    				loop: false,
+    				live: false,
+    				hashtags: true,
+    				timestamp: true,
+    				avatars: false,
+				    behavior: 'all'
+  					}
+				}).render().setUser('mcatQD').start();
+			</script>
+			<!-- <img src="http://placehold.it/288"> -->
+		</div>
+		<div id="calendar">
+			<h4>Calendar</h4>
+			<hr>
+			<!-- TODO: Customize using RestyleGC -->
+			<iframe src="https://www.google.com/calendar/b/0/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=288&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=mcatqd.com_ps5p6q2nrm1vi2bagu1k4ghhmg%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FMontreal" style=" border-width:0 " width="288" height="288" frameborder="0" scrolling="no"></iframe>
+			<!-- <img src="http://placehold.it/288"> -->
+		</div>
+	</div>
+	<footer>
+	<p>MCAT&reg; is a registered trademark of the Association of American Medical Colleges, which is not affiliated with this website. <a href="about.html">Contact</a></p>
+	<br>
+	<p>Now on Heroku</p>
+	<!-- <img src="http://placehold.it/865x25"> -->
+	</footer>
+</div>
+</div>
+</body>
+</html>
