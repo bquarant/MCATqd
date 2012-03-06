@@ -25274,3 +25274,49 @@ Started GET "/" for 127.0.0.1 at 2012-01-02 20:20:15 -0500
   [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 4
 Rendered quizzes/index.html.erb within layouts/application (60.0ms)
 Completed 200 OK in 89ms (Views: 62.1ms | ActiveRecord: 1.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /Users/bq/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/" for 127.0.0.1 at 2012-03-06 16:54:24 -0500
+  Processing by QuizzesController#index as HTML
+  [1m[36mQuestion Load (7.5ms)[0m  [1mSELECT "questions".* FROM "questions" ORDER BY questions.id DESC LIMIT 1[0m
+  [1m[35mOption Load (14.6ms)[0m  SELECT "options".* FROM "options" WHERE ("options".question_id = 2)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (11.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts" LIMIT 4[0m
+Rendered quizzes/index.html.erb within layouts/application (196.6ms)
+Completed 200 OK in 379ms (Views: 202.1ms | ActiveRecord: 33.7ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2012-03-06 16:54:31 -0500
+  Processing by HomeController#about as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" LIMIT 4[0m
+Rendered home/about.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/questions/2/answers" for 127.0.0.1 at 2012-03-06 16:54:38 -0500
+  Processing by AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"naSobuDfYXkLVwFMVL6al8xNQXYX0vLenHyHm7rdk0E=", "answer"=>{"option_id"=>"6"}, "commit"=>"ANSWER", "question_id"=>"2"}
+  [1m[35mQuestion Load (0.1ms)[0m  SELECT "questions".* FROM "questions" WHERE "questions"."id" = 2 LIMIT 1
+  [1m[36mAREL (0.7ms)[0m  [1mINSERT INTO "answers" ("answer", "user_id", "quiz_id", "created_at", "updated_at", "option_id", "question_id") VALUES (NULL, NULL, NULL, '2012-03-06 21:54:38.315928', '2012-03-06 21:54:38.315928', 6, 2)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mUPDATE "answers" SET "quiz_id" = 2, "updated_at" = '2012-03-06 21:54:38.370933' WHERE "answers"."id" = 54[0m
+Redirected to http://localhost:3000/questions/2/answers/54
+Completed 302 Found in 95ms
+
+
+Started GET "/questions/2/answers/54" for 127.0.0.1 at 2012-03-06 16:54:38 -0500
+  Processing by AnswersController#show as HTML
+  Parameters: {"question_id"=>"2", "id"=>"54"}
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."id" = 54 LIMIT 1
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" WHERE "questions"."id" = 2 LIMIT 1[0m
+  [1m[35mOption Load (0.1ms)[0m  SELECT "options".* FROM "options" WHERE "options"."id" = 6 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" LIMIT 4
+Rendered answers/show.html.erb within layouts/application (63.5ms)
+Completed 200 OK in 93ms (Views: 79.6ms | ActiveRecord: 2.0ms)
