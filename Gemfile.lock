@@ -114,6 +114,8 @@ DEPENDENCIES
   jquery-rails
   rack
   rails (= 3.2.9)
+  railties
+  rake
   sass-rails (~> 3.2.3)
   sqlite3
   thin
