@@ -10,8 +10,8 @@ class AnswersController < ApplicationController
 
   def show
     @answer = Answer.find(params[:id])
-    @question = Question.where(:question_id => @answer.question_id)
-
+    @question = Question.find(@answer.question_id)
+    @option = Option.find(@answer.answer)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -34,7 +34,7 @@ class AnswersController < ApplicationController
 
   def create
     @answer = Answer.new(params[:answer])
-    
+  
     respond_to do |format|
       if @answer.save
         format.html { redirect_to @answer, notice: 'Answer was successfully created.' }
@@ -46,8 +46,6 @@ class AnswersController < ApplicationController
     end
   end
 
-  # PUT /answers/1
-  # PUT /answers/1.json
   def update
     @answer = Answer.find(params[:id])
 
@@ -62,8 +60,6 @@ class AnswersController < ApplicationController
     end
   end
 
-  # DELETE /answers/1
-  # DELETE /answers/1.json
   def destroy
     @answer = Answer.find(params[:id])
     @answer.destroy

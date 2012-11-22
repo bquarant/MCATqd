@@ -4,6 +4,6 @@ Mcatqd::Application.routes.draw do
   resources :options
   resources :quizzes
 
-  root :to => "home#index" 
+  root :to => "quizzes#index" 
   get "home/index"
 end
