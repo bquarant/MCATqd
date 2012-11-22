@@ -6,7 +6,7 @@ gem 'rake'
 gem 'jquery-rails'
 gem 'rack'
 gem 'thin'
-
+gem 'simple_form'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

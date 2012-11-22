@@ -1,8 +1,9 @@
 <%= form_for(@question) do |f| %>
+
+<!-- TODO: Build error handling for question submissions -->
   <% if @question.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved:</h2>
-
       <ul>
       <% @question.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -12,10 +13,17 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :content %><br />
-    <%= f.text_field :content %>
+    Question stem:<%= f.text_field :content %>
   </div>
-  <div class="actions">
+
+<%= f.fields_for :options do |builder| %>  
+  <p>  
+    <%= builder.label :content, "Option" %><br />  
+    <%= builder.text_area :content, :rows => 4 %>  
+  </p>
+<% end %>
+
+	<div class="actions">
     <%= f.submit %>
   </div>
-<% end %>
+<% end %>	
