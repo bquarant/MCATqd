@@ -2,13 +2,14 @@
 
 <table>
   <tr>
-    <th>Content</th>
+    <th>Question Stem</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @questions.each do |question| %>
+
   <tr>
     <td><%= question.content %></td>
     <td><%= link_to 'Show', question %></td>

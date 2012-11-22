@@ -16,12 +16,20 @@
     Question stem:<%= f.text_field :content %>
   </div>
 
+<table>
 <%= f.fields_for :options do |builder| %>  
-  <p>  
+<tr>
+	<td>
     <%= builder.label :content, "Option" %><br />  
-    <%= builder.text_area :content, :rows => 4 %>  
-  </p>
+    <%= builder.text_area :content, :rows => 4 %><br />
+ 	</td>
+	<td>
+    <%= builder.label :correct, "Correct?" %><br />  
+    <%= builder.check_box :correct %><br />  
+	</td>
+</tr>
 <% end %>
+</table>
 
 	<div class="actions">
     <%= f.submit %>

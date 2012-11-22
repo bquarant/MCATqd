@@ -1,7 +1,0 @@
-<%= simple_form_for(@option) do |f| %>
-  <%= f.error_notification %>
-
-    <%= f.input :content, :label => "<b>Option</b>" %>
-	<%= f.input :question_id, :as => :hidden, :input_html => {:value => question.id } %>
-    <%= f.button :submit %>
-<% end %>
