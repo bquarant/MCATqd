@@ -1,6 +1,4 @@
 class AnswersController < ApplicationController
-  # GET /answers
-  # GET /answers.json
   def index
     @answers = Answer.all
 
@@ -10,10 +8,10 @@ class AnswersController < ApplicationController
     end
   end
 
-  # GET /answers/1
-  # GET /answers/1.json
   def show
     @answer = Answer.find(params[:id])
+    @question = Question.where(:question_id => @answer.question_id)
+
 
     respond_to do |format|
       format.html # show.html.erb
@@ -21,8 +19,6 @@ class AnswersController < ApplicationController
     end
   end
 
-  # GET /answers/new
-  # GET /answers/new.json
   def new
     @answer = Answer.new
 
@@ -32,16 +28,13 @@ class AnswersController < ApplicationController
     end
   end
 
-  # GET /answers/1/edit
   def edit
     @answer = Answer.find(params[:id])
   end
 
-  # POST /answers
-  # POST /answers.json
   def create
     @answer = Answer.new(params[:answer])
-
+    
     respond_to do |format|
       if @answer.save
         format.html { redirect_to @answer, notice: 'Answer was successfully created.' }

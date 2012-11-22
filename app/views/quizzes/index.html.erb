@@ -1,0 +1,12 @@
+<h4><%= @question.content%></h4>
+<%= form_for(@answer) do |form| %>
+	<% @question.options.each do |option| %>
+		<div>
+			<%= form.radio_button :answer, option.id %>
+			<%= form.label "option_text", option.content %>
+			<%= form.hidden_field :question_id, :value => @question.id  %>
+		</div>
+	<% end %>
+	<br>
+	<%= form.submit "Submit Answer" %>
+<% end %>

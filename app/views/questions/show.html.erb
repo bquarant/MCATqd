@@ -2,14 +2,14 @@
 
 <p>
   <b>Content:</b>
-  <%=h @question.content %>
+  <%= @question.content %>
 
 <ol>  
 <table>
   <th>Option</th><th>Correct?</th>
   <% for option in @question.options %>  
   <tr>
-  <td><li><%= h option.content %></li></td><td><%= h option.correct %></td>
+  <td><li><%= option.content %></li></td><td><%= option.correct %></td>
   </tr>
   <% end %>  
 </table>
