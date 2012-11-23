@@ -6,6 +6,7 @@ class Question < ActiveRecord::Base
   
   #Question-Option Relationship
   has_many :options, :dependent => :destroy
+  
   accepts_nested_attributes_for :options, :answers
 
 end

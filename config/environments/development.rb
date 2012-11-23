@@ -34,4 +34,10 @@ Mcatqd::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  # Ensure you have defined default url options in your environments file.
+  # Here is an example of default_url_options appropriate for a development
+  # environment in config/environments/development.rbdevra
+  config.action_mailer.default_url_options = { :host => 'localhost:3005' }
+  
 end

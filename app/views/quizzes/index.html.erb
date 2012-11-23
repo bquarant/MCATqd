@@ -5,6 +5,13 @@
 			<%= form.radio_button :answer, option.id %>
 			<%= form.label "option_text", option.content %>
 			<%= form.hidden_field :question_id, :value => @question.id  %>
+			<% if user_signed_in? %>
+			<%= form.hidden_field :user_id, :value => current_user.id  %>
+			<% else %>
+				<% if false %>
+				<% end %>
+			<% end %>
+			
 		</div>
 	<% end %>
 	<br>
