@@ -1,10 +1,18 @@
+<!-- Display today's date -->
+<div class="pull-right"><p><strong><script type="text/javascript">
+		var d = new Date();
+		document.write(d.getMonth()+1 +"/" +d.getDate() + "/" +d.getFullYear());
+		</script></strong></p>
+</div>
+
+<!-- Display question and options -->
 <h4><%= @question.content%></h4>
-<div class="form form-inline">
 <%= form_for(@answer) do |form| %>
 	<% @question.options.each do |option| %>
-		<div>
-			<%= form.radio_button :answer, option.id %>
-			<%= form.label "option_text", option.content %>
+		<div class="form-inline">
+			<%= form.radio_button :answer, option.id, :style=>"margin-bottom: 7px;"%>
+			<%= form.label "option_text", option.content%>			
+			<br>
 			<%= form.hidden_field :question_id, :value => @question.id  %>
 			<% if user_signed_in? %>
 			<%= form.hidden_field :user_id, :value => current_user.id  %>
@@ -16,6 +24,5 @@
 		</div>
 	<% end %>
 	<br>
-	<%= form.submit "Submit Answer" %>
+	<center><%= form.submit "Submit Answer", :class=>"btn btn-large btn-primary" %></center>
 <% end %>
-</div>

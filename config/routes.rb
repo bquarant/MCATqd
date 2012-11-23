@@ -1,5 +1,7 @@
 Mcatqd::Application.routes.draw do
   
+  get "about/index"
+
   devise_for :users do
     resources :answers
   end
@@ -11,4 +13,7 @@ Mcatqd::Application.routes.draw do
 
   root :to => "quizzes#index" 
   get "home/index"
+  get "about/index"
+  
+  match ':permalink', :controller => 'about', :action => 'index', :as => 'about'
 end
