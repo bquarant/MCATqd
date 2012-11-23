@@ -1,4 +1,5 @@
 <h4><%= @question.content%></h4>
+<div class="form form-inline">
 <%= form_for(@answer) do |form| %>
 	<% @question.options.each do |option| %>
 		<div>
@@ -17,3 +18,4 @@
 	<br>
 	<%= form.submit "Submit Answer" %>
 <% end %>
+</div>

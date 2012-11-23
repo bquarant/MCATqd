@@ -1,25 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mcatqd</title>
+  <title>MCATqd.com - Once Daily MCAT Prepper</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MCATqd.com - Once Daily MCAT Prepper">
+  <meta name="author" content="Brian Quaranto">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  
+<style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 15px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: justify;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+		text-align: center;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+</style>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
 </head>
 <body>
-	
-<p class="alert"><%= alert %></p>
 
-<h1>MCATqd.com</h1>
-<% if user_signed_in? %>
-  <%= link_to('Sign out', destroy_user_session_path, :method => :delete) %>
-<% else %>
-  <%= link_to('Sign in', new_user_session_path) %>
-  <%= link_to('Sign up', new_user_registration_path) %>
-<% end %>
+<div class="container-narrow">
+	<div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+		<% if user_signed_in? %>
+		  <li><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></li>
+		<% else %>
+		  <li><%= link_to('Sign in', new_user_session_path) %></li>
+		  <li><%= link_to('Sign up', new_user_registration_path) %></li>
+		<% end %>
+        </ul>
+        <h3 class="muted">MCATqd.com</h3>
+    </div>
+    <hr>
+	<div class="jumbotron">
+        <h1>Your Name, MD</h1>
+		<br>
+        <p class="lead">You need top scores on the MCAT to even be considered in today's increasingly competitive medical school admissions process. 
+		<br><br><strong>MCATqd.com</strong> keeps you on track for scoring highly on the MCAT, through daily maximum-difficulty questions and a rigorous review schedule catered directly for your MCAT test date.</p>
+        <center><a class="btn btn-large btn-success" href="">Are you ready?</a></center>
+      </div>
+    <hr>
+	<div class="row-fluid">
+	<div class="pull-right"><p><strong><script type="text/javascript">
+			var d = new Date();
+			document.write(d.getMonth()+1 +"/" +d.getDate() + "/" +d.getFullYear());
+			</script></strong></p>
+	</div>
+	<%= yield %>
+	</div>
+	<hr>
 
-	<br>
-<%= yield %>
+<!-- TODO: Flesh out some marketing ideas here 
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-</body>
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="span6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
+      <hr>
+-->
+
+      <div class="footer pull-right">
+        <p>&copy; MCATqd.com 2012</p>	
+      </div>
+    </div> <!-- /container -->
+
+  </body>
 </html>
