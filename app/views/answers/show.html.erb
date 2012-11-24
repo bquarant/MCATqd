@@ -1,11 +1,19 @@
 <p id="notice"><%= notice %></p>
 
-Question: <%= @question.content %>
+<strong>Question:</strong> <%= @question.content %>
+<br>
+<strong>Your Answer:</strong> <%= @option.content%>
 <br><br>
-Your Answer: <%= @option.content%>
-<br><br>
-Correct: <%= @option.correct %>
-<br><br>
+<center>
+<% if @option.correct == true%>
+<strong>Nice!</strong> You got the answer <span style="color: green;"><strong>correct</strong></span>!
+<%else %>
+<% if @option.correct == false%>
+<strong>Bummer.</strong> You got the answer <span style="color: red;"><strong>wrong</strong></span>!
+<%end%>
+<%end%>
+</center>
 
-<%= link_to 'Edit', edit_answer_path(@answer) %> |
-<%= link_to 'Back', answers_path %>
+<!-- TODO: Insert explanations... -->
+
+<!-- TODO: Create link to schedule and report card -->

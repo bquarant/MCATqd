@@ -1,6 +1,6 @@
-<h1>Listing questions</h1>
-
-<table>
+<h1>Question Database</h1>
+<br>
+<table class="table table-hover table-striped">
   <tr>
     <th>Question Stem</th>
     <th></th>
@@ -9,10 +9,11 @@
   </tr>
 
 <% @questions.each do |question| %>
-
   <tr>
     <td><%= question.content %></td>
+	<!-- TODO: Display only if current_user has a paid subscription  -->
     <td><%= link_to 'Show', question %></td>
+	<!-- TODO: Display only if current_user is an administrator -->
     <td><%= link_to 'Edit', edit_question_path(question) %></td>
     <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
@@ -21,4 +22,5 @@
 
 <br />
 
-<%= link_to 'New Question', new_question_path %>
+<!-- TODO: Only show if user is an administrator -->
+<center><%= link_to 'Create New Question', new_question_path, :class=>"btn btn-large btn-primary" %></center>

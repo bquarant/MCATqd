@@ -12,26 +12,28 @@
     </div>
   <% end %>
 
-  <div class="field">
-    Question stem:<%= f.text_field :content %>
+  <div class="form">
+    Question stem:
+	<br>
+	<%= f.text_field :content, :style=>"width: 100%" %>
   </div>
 
-<table>
+<table class="table" style="border-color: #FFF !important;">
 <%= f.fields_for :options do |builder| %>  
 <tr>
 	<td>
-    <%= builder.label :content, "Option" %><br />  
-    <%= builder.text_area :content, :rows => 4 %><br />
- 	</td>
+    <%= builder.label :content, "Option" %> 
+    <%= builder.text_field :content, :rows => 1, :style =>"width: 90%" %>
+	</td>
 	<td>
-    <%= builder.label :correct, "Correct?" %><br />  
-    <%= builder.check_box :correct %><br />  
+	<center>
+    <%= builder.label :correct, "Correct?" %>
+    <%= builder.check_box :correct %>
+	</center>
 	</td>
 </tr>
 <% end %>
 </table>
-
-	<div class="actions">
-    <%= f.submit %>
-  </div>
+<br>
+<center><%= f.submit "Create Question", :class=>"btn btn-large btn-primary" %></center>
 <% end %>	
