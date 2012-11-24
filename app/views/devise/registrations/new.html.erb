@@ -1,17 +1,23 @@
-<h2>Sign up</h2>
-
-<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form">
-    <%= f.input :email, :required => true, :autofocus => true %>
+<center><h2>Let's get started!</h2></center>
+<br>
+<p style="text-align:center">
+	We'll always offer you new, free, daily maximum-difficulty MCAT test preparation questions. </p>
 	<br>
-    <%= f.input :password, :required => true %>
+<p style="text-align:justify">
+	If you're serious about scoring highly on the MCAT, <strong>for just $10 with our introductory offer</strong>, you can register to gain access to our entire question database, track your performance on our questions over time, MCAT study schedule planning, and access to the individuals who write the questions in case you need more help.</p> 
+<br>
+<%= simple_form_for(resource, :as => resource_name, 
+							  :url => registration_path(resource_name),
+							  :html => { :class => "form-horizontal", :style=>"margin-left:15%"}) do |f| %>
+							
+  	<%= f.error_notification %>
+    <%= f.input :email, :required => true, :autofocus => true, :label =>"Email:&nbsp;" %>
 	<br>
-    <%= f.input :password_confirmation, :required => true %>
-	<br	>
-    <%= f.button :submit, "Sign up", :class => "btn btn-success " %>
-  </div>
+    <%= f.input :password, :required => true, :label =>"Password:&nbsp;" %>
+	<br>
+    <%= f.input :password_confirmation, :required => true, :label =>"Confirmation:&nbsp;" %>
+	<br><br>
+    <center><%= f.button :submit, "Sign up!", :class => "btn btn-success btn-large", :style=>"margin-left:-20%;"  %></center>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<!-- STRIPE BUTTON STUFF -->

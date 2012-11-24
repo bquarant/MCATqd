@@ -34,6 +34,7 @@
     <hr>
 
 <!-- Display jumbotron marketing stuff only if user is not signed in -->
+
 <% if current_user.nil? %>
 	<div class="jumbotron">
         <h1>Your Name, MD</h1>
@@ -44,7 +45,6 @@
     </div>
 	<hr>
 <!-- If user is signed in, do not display jumbotron -->
-<% else  %>
 <% end %>
 
 	<div class="row-fluid">

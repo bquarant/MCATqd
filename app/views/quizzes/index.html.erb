@@ -5,12 +5,13 @@
 		</script></strong></p>
 
 </div>
-<br>
+ <br>
 <!-- Display question and options -->
 <h4><%= @question.content%></h4>
+<br>
 <%= form_for(@answer) do |form| %>
 	<% @question.options.each do |option| %>
-		<div class="form-inline">
+		<div class="form-inline" style="margin-left: 5%">
 			<%= form.radio_button :answer, option.id, :style=>"margin-bottom: 7px;"%>
 			<%= form.label "option_text", option.content%>			
 			<br>
