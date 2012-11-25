@@ -28,6 +28,7 @@
           <li><%= link_to('Home', root_path) %></li>
           <li><%= link_to 'About', about_path('about') %></li>
 		<% if user_signed_in? %>
+		  <li><%= link_to 'Questions', questions_path %></li>
 		  <li><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></li>
 		<% else %>
 		  <li><%= link_to('Sign in', new_user_session_path) %></li>
@@ -43,7 +44,7 @@
 	<div class="jumbotron">
         <h1>Your Name, MD</h1>
 		<br>
-        <p class="lead">You need top scores on the MCAT to even be considered in today's increasingly competitive medical school admissions process. 
+        <p class="lead">First, you need top scores on the MCAT to even be considered in today's increasingly competitive medical school admissions process. 
 		<br><br><strong>MCATqd.com</strong> keeps you on track to score highly on the MCAT, through daily maximum-difficulty questions and a rigorous review schedule tailored for your MCAT test date.</p>
         <center><%= link_to('Are you ready?', new_user_registration_path, :class=>"btn btn-large btn-success") %></center>
     </div>
