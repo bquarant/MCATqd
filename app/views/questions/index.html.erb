@@ -4,8 +4,11 @@
   <tr>
     <th>Question Stem</th>
     <th></th>
+	<% if current_user.is_admin == 1%>
     <th></th>
     <th></th>
+	<%else%>
+	<%end%>
   </tr>
 
 <% @questions.each do |question| %>
@@ -13,14 +16,20 @@
     <td><%= question.content %></td>
 	<!-- TODO: Display only if current_user has a paid subscription  -->
     <td><%= link_to 'Show', question %></td>
-	<!-- TODO: Display only if current_user is an administrator -->
+
+<!-- Display edit and destroy links only if current_user is an administrator -->
+	<% if current_user.is_admin == 1%>
     <td><%= link_to 'Edit', edit_question_path(question) %></td>
     <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	<%else%>
+	<%end%>
   </tr>
 <% end %>
 </table>
-
 <br />
 
-<!-- TODO: Only show if user is an administrator -->
+<!-- Display "Create New Question" button only if current_user is an administrator -->
+<%if current_user.is_admin ==1%>
 <center><%= link_to 'Create New Question', new_question_path, :class=>"btn btn-large btn-primary" %></center>
+<% else %>
+<% end %>

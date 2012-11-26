@@ -1,17 +1,49 @@
+<!-- This code displays after user submits an answer -->
+
 <p id="notice"><%= notice %></p>
 
+<!-- Summary of Question and Answer-->
 <strong>Question:</strong> <%= @question.content %>
 <br>
 <strong>Your Answer:</strong> <%= @option.content%>
 <br><br>
-<center>
+
+<center><span style="font-size: 20px;">
+	
+<!-- Display if answer is correct-->
 <% if @option.correct == true%>
-<strong>Nice!</strong> You got the answer <span style="color: green;"><strong>correct</strong></span>!
+<strong>Nice!</strong> You got the answer <span style="color: green;">  <strong>correct</strong></span>!
+
+<!-- Display if  answer is correct and user is not signed up-->
+<% if current_user.nil? %>
+<br><br>
+Sign up today to get access to the question database to stay sharp before your test!</p>
+<br>
+<center><%= link_to('Sign up!', new_user_registration_path, :class=>"btn btn-large btn-success") %></center>
+<% end%>
+
 <%else %>
+
+<!-- Display if answer is incorrect-->
 <% if @option.correct == false%>
-<strong>Bummer.</strong> You got the answer <span style="color: red;"><strong>wrong</strong></span>!
+<strong>Bummer.</strong> You got the answer <span style="color: red;"><strong>wrong</strong> </span>!
+<br><br><br>
+
+<!-- Display if answer is incorrect and the user is not signed up -->
+<% if current_user.nil? %>
+<p>Don't get this question wrong on the MCAT. 
+<br><br>
+Sign up today to get access to answer explanations and new daily questions!</p>
+<br>
+<center><%= link_to('Sign up!', new_user_registration_path, :class=>"btn btn-large btn-success") %></center>
+<% end %>
+
 <%end%>
+
 <%end%>
+
+
+</span>
 </center>
 
 <!-- TODO: Insert explanations... -->

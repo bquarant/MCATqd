@@ -8,6 +8,9 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   
+  # TODO: Set is_admin to accessible; not sure if this is done correctly.
+  attr_accessible :is_admin
+  
   #User-Answer relationship 
   has_many :answers
 end
