@@ -44,6 +44,7 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
+    diff-lcs (1.1.3)
     erubis (2.7.0)
     eventmachine (1.0.0)
     execjs (1.4.0)
@@ -61,7 +62,9 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.3.7)
+    nokogiri (1.5.5)
     orm_adapter (0.4.0)
+    pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -88,6 +91,19 @@ GEM
     rake (10.0.2)
     rdoc (3.12)
       json (~> 1.4)
+    rspec (2.11.0)
+      rspec-core (~> 2.11.0)
+      rspec-expectations (~> 2.11.0)
+      rspec-mocks (~> 2.11.0)
+    rspec-core (2.11.1)
+    rspec-expectations (2.11.3)
+      diff-lcs (~> 1.1.3)
+    rspec-mocks (2.11.3)
+    rspec-rails (2.11.0)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec (~> 2.11.0)
     sass (3.2.3)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -117,6 +133,10 @@ GEM
       multi_json (~> 1.0, >= 1.0.2)
     warden (1.2.1)
       rack (>= 1.0)
+    webrat (0.7.1)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
 
 PLATFORMS
   ruby
@@ -125,12 +145,15 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails
+  pg
   rack
   rails (= 3.2.9)
   railties
   rake
+  rspec-rails (= 2.11.0)
   sass-rails (~> 3.2.3)
   simple_form
   sqlite3
   thin
   uglifier (>= 1.0.3)
+  webrat (= 0.7.1)
