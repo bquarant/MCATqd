@@ -4,7 +4,7 @@
   <tr>
     <th>Question Stem</th>
     <th></th>
-	<% if current_user.is_admin == 1%>
+	<% if current_user.is_admin == "1" %>
     <th></th>
     <th></th>
 	<%else%>
@@ -18,7 +18,7 @@
     <td><%= link_to 'Show', question %></td>
 
 <!-- Display edit and destroy links only if current_user is an administrator -->
-	<% if current_user.is_admin == 1%>
+	<% if current_user.is_admin == "1" %>
     <td><%= link_to 'Edit', edit_question_path(question) %></td>
     <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	<%else%>
@@ -29,7 +29,7 @@
 <br />
 
 <!-- Display "Create New Question" button only if current_user is an administrator -->
-<%if current_user.is_admin ==1%>
+<%if current_user.is_admin == "1" %>
 <center><%= link_to 'Create New Question', new_question_path, :class=>"btn btn-large btn-primary" %></center>
 <% else %>
 <% end %>

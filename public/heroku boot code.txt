@@ -1,0 +1,28 @@
+# Because I write pretty janky code, here's some commands to run after a fresh boot on 
+# Heroku
+
+# Push code up to heroku
+git push heroku master
+
+# Create DB if needed
+heroku run bundle exec rake db:create
+
+# Update DB to the latest and freshes
+heroku run bundle exec rake db:migrate
+
+# Create the first question to prevent errors from being thrown
+heroku run console
+q = Question.new
+q.save
+
+# Web site should be able to boot now without errors
+
+# Create a new account user regular login process
+
+# Set this new account as a admin
+heroku run console
+u = User.find(1)
+u.attributes = { :is_admin => 1 }
+u.save
+
+# ^ still isn't working properly...
