@@ -10,6 +10,16 @@
 <h4><%= @question.content%></h4>
 <br>
 <%= form_for(@answer) do |form| %>
+<% if @answer.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@answer.errors.count, "error") %> prohibited this answer from being saved:</h2>
+      <ul>
+      <% @answer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 	<% @question.options.each do |option| %>
 		<div class="form-inline" style="margin-left: 5%">
 			<%= form.radio_button :answer, option.id, :style=>"margin-bottom: 7px;"%>
