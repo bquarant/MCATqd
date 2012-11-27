@@ -11,15 +11,14 @@
 <br>
 <%= simple_form_for(resource, :as => resource_name, 
 							  :url => registration_path(resource_name),
-							  :html => { :class => "form-horizontal", :style=>"margin-left:15%"}) do |f| %>
+							  :html => { :class => "registration-form form-horizontal",
+							   :style=>"margin-left:15%;"}) do |f| %>
 							
   	<%= f.error_notification %>
     <%= f.input :email, :required => true, :autofocus => true, :label =>"Email:&nbsp;" %>
-	<br>
     <%= f.input :password, :required => true, :label =>"Password:&nbsp;" %>
-	<br>
     <%= f.input :password_confirmation, :required => true, :label =>"Confirmation:&nbsp;" %>
-	<br><br>
+	<br>
     <center><%= f.button :submit, "Sign up!", :class => "btn btn-success btn-large", :style=>"margin-left:-20%;"  %></center>
 <% end %>
 

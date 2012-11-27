@@ -1,14 +1,15 @@
 <!-- Display today's date -->
-<div class="pull-right"><p><strong>Today's Question - <script type="text/javascript">
+<div class="pull-right"><h4><strong>Today's Question - <script type="text/javascript">
 		var d = new Date();
 		document.write(d.getMonth()+1 +"/" +d.getDate() + "/" +d.getFullYear());
-		</script></strong></p>
+		</script></strong></h4>
 
 </div>
 <br>
 <!-- Display the latest question and response options -->
-<h4><%= @question.content%></h4>
-<br>
+<div class="lead">
+<h3><%= @question.content%></h3>
+</div>
 <%= form_for(@answer) do |form| %>
 <% if @answer.errors.any? %>
   <div id="error_explanation">
@@ -21,7 +22,7 @@
     </div>
   <% end %>
 	<% @question.options.each do |option| %>
-		<div class="form-inline" style="margin-left: 5%">
+		<div class="form-inline option-text" style="margin-left: 5%">
 			<%= form.radio_button :answer, option.id, :style=>"margin-bottom: 7px;"%>
 			<%= form.label "option_text", option.content%>			
 			<br>
