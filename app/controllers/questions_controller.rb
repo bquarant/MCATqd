@@ -10,6 +10,9 @@ class QuestionsController < ApplicationController
 
   def show
     @question = Question.find(params[:id])
+    
+    #Allow creation of new answers through Questions#show
+    @answer = Answer.new
 
     respond_to do |format|
       format.html # show.html.erb
