@@ -15,12 +15,23 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
+
 </head>
 
 <body> 
+	
 <!-- Load TypeKit fonts right away -->
 <script type="text/javascript" src="//use.typekit.net/flm3wqe.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<!-- Bootstrap Javascript/JQuery stuff -->
+<script type="text/javascript">
+	  $('.dropdown-toggle').dropdown()
+
+	  $('.dropdown-menu input, .dropdown-menu label').click(function(e) {
+	        e.stopPropagation();
+	  });
+</script>
 
 <div class="container-narrow">
 	<div class="masthead">
@@ -31,7 +42,13 @@
 		  <li><%= link_to 'Questions', questions_path %></li>
 		  <li><%= link_to('Sign out', destroy_user_session_path, :method => :delete) %></li>
 		<% else %>
-		  <li><%= link_to('Sign in', new_user_session_path) %></li>
+	          <li class="divider-vertical"></li>
+	          <li class="dropdown">
+	            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+	            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+					<%= render "devise/sessions/form"%>
+	            </div>
+
 		<% end %>
         </ul>
         <h3 class="muted"><%= link_to('MCATqd.com', root_path) %></h3>
@@ -62,6 +79,8 @@
       </div>
     </div> <!-- /container -->
 
+
+<!-- Friendly code from gaug.es which tracks your every move -->
 <script type="text/javascript">
 	  var _gauges = _gauges || [];
 	  (function() {
