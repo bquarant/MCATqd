@@ -25,4 +25,51 @@ u = User.find(1)
 u.attributes = { :is_admin => 1 }
 u.save
 
-# ^ still isn't working properly...
+# Set up twenty initial questions
+-The organ that houses glomeruli is associated with 
+--the pericardial cavity
+--the adrenal cavity
+--the pleural cavity
+--the peritoneal cavity*
+
+-Blood coming through the umbilical vein is shunted around the liver through the:
+--aorta
+--foramen ovale
+--ligamentum venosum
+--ductus venosus*
+
+-Which of the following is the best methodology to use in order to track gene flow?
+--urine samples
+--ABO blood types*
+--historical documentation
+--archeological digs
+
+-In living organisms, glucose is oxidized to carbon dioxide and water to produce energy. How many moles of carbon dioxide would result from the complete oxidation of glucose?
+--0
+--5
+--6*
+--7
+
+-In what units are the chemical shifts of hydrogen in a NMR spectrum measured?
+--wavenumbers
+--ppm*
+--wavelengths
+--absorbance units
+
+-50.0 mL of a 3.00 M solution of carbonic acid is titrated with a 7.00M solution of sodium hydroxide. How much of the sodium hydroxide is necessary to convert all of the carbonic acid to sodium carbonate?
+--10.7 mL
+--21.4 mL
+--42.8 mL*
+--100.0 mL
+
+-Which expression gives the relationship between free energy and emf?
+--DeltaG = nFE
+--DeltaG = -nFE
+--DeltaG = -nFE^0
+--DeltaG^0 = -nFE
+
+-A spontaneous redox reaction is indicated by:
+--A positive emf
+--A negative emf
+--A positive enthalpy
+--A negative enthalpy
