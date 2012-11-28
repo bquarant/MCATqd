@@ -3,6 +3,7 @@
 <table class="table table-hover table-striped">
   <tr>
     <th>Question Stem</th>
+	<th></th>
     <th></th>
 	<% if current_user.is_admin == 1 %>
     <th></th>
@@ -15,6 +16,7 @@
   <tr>
     <td><%= question.content %></td>
 	<!-- TODO: Display only if current_user has a paid subscription  -->
+	<td><%= question.category %></td>
     <td><%= link_to 'Show', question %></td>
 
 <!-- Display edit and destroy links only if current_user is an administrator -->
