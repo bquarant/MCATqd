@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
   def index
-    @questions = Question.all
+    @questions = Question.order("created_at DESC")
     
     respond_to do |format|
       format.html # index.html.erb
@@ -63,8 +63,6 @@ class QuestionsController < ApplicationController
     end
   end
 
-  # DELETE /questions/1
-  # DELETE /questions/1.json
   def destroy
     @question = Question.find(params[:id])
     @question.destroy

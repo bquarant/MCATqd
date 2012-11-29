@@ -15,30 +15,26 @@
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<!-- 
-	For Mom & Dad, who bought me all of those review books.
-	Made in Boston, with love
-		-Brian Quaranto
--->
-
-
+<!-- For Mom & Dad, who bought me all of those review books.
+	 Made in Boston, with love
+		-Brian Quaranto 								-->
 </head>
 
 <body> 
 	
-<!-- Load TypeKit fonts right away -->
+<!-- Load TypeKit fonts -->
 <script type="text/javascript" src="//use.typekit.net/flm3wqe.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <!-- Bootstrap Javascript/JQuery stuff -->
 <script type="text/javascript">
-	  $('.dropdown-toggle').dropdown()
-
+	  $('.dropdown-toggle').dropdown();
 	  $('.dropdown-menu input, .dropdown-menu label').click(function(e) {
 	        e.stopPropagation();
 	  });
 </script>
 
+<!-- Navigation Bar Code -->
 <div class="container-narrow">
 	<div class="masthead">
         <ul class="nav nav-pills pull-right">
@@ -62,7 +58,6 @@
     <hr>
 
 <!-- Display jumbotron marketing stuff only if user is not signed in -->
-
 <% if current_user.nil? %>
 	<div class="jumbotron">
         <h1>Your Name, MD</h1>
@@ -83,7 +78,7 @@
       <div class="footer pull-right" style="font-size: 12px;">
         <p>&copy; MCATqd.com 2012 | <a href="mailto:brian@quaran.to">?'s</a></p>
       </div>
-    </div> <!-- /container -->
+</div> <!-- /container -->
 
 
 <!-- Friendly code from gaug.es which tracks your every move -->

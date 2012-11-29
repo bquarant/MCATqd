@@ -12,8 +12,7 @@ Mcatqd::Application.routes.draw do
   resources :quizzes
 
   root :to => "quizzes#index" 
-  get "home/index"
-  get "about/index"
   
+  get "about/index"
   match ':permalink', :controller => 'about', :action => 'index', :as => 'about'
 end
