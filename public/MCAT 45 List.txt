@@ -1,0 +1,518 @@
+MCAT 45
+
+List of things to I have to understand:
+PHYSICS 			[____________]
+CHEMISTRY 			[__________]
+ORGANIC CHEMISTRY 	[_____________]
+BIOLOGY 			[___________]
+
+P H Y S I C S
+-+-+-+-+-+-+-
+1. Kinematics
+
+-The four fundamental physical dimensions and their SI units
+-The difference between displacement and distance traveled
+-The difference between velocity and speed
+-The difference between instantaneous velocity and average velocity
+-The difference between instantaneous acceleration and average acceleration
+-How graphs of position, velocity, and acceleration versus time relate to physical motion
+-The equations for motion under constant acceleration, and when each is useful
+-The types of initial conditions which occur in free fall, and how to use the equations for motion under constant acceleration appropriately
+
+2. Newtonian Mechanics
+
+-What a force is and how it affects the object to which it is applied
+-Newton's First law and what it implies
+-Newton's Second law and what it implies
+-How to construct a force-body diagram for objects experiencing external forces, and how to apply Newton's Second Law to those diagrams.
+-Newton's Third law and what it implies
+-The two types of friction and how each is applied
+-Newton's Law of Gravitation and how it is applied.
+-How Newton's Second Law is affected by uniform circular motion
+-What torque is and how it affects the object to which it is applied
+-Translational equilibrium and rotational equilibrium, and the circumstances that cause each to occur.
+
+3. Energy and Momentum
+-The definition of work and how doing work affects the energy of an object
+-The definition of kinetic energy
+-The relationship between the net work done on an object and the object's kinetic energy
+-The formulas for gravitational potential energy, in general and near the earth.
+-Under which circumstances the total mechanical energy of a system is conserved, and how to use the conservation of energy to solve problems
+-The difference between conservative forces and nonconservative forces
+-The concept of average power applied to a system by having work done on it
+-The definitions of the momentum of an object and the momentum of a system
+-The conditions under which the total momentum of a system is conserved
+-The differences among elastic, inelastic, and totally inelastic collisions, and what each implies about the system
+-The definition of impulse, and the consequences of applying an average force to an object over a short period of time.
+
+4. Thermodynamics
+-What temperature means and the different temperature scales
+-What heat is, and how it is different from temperature
+-How materials expand and contract as their temperature changes
+-All three parts of the first law of thermodynamics, and how the law is applied
+-The definition of entropy
+-How the second law of thermodynamics is applied, and the difference between the entropy of an object and the entropy of a system of objects.
+
+5. Fluids and Solids
+-The definition of density
+-The definition of pressure
+-The difference between gauge pressure and total pressure
+-Pascal's principle and how it is applied
+-The formula for hydrostatic pressure and how it is applied
+-The formula for the buoyant force and how it is applied to Newton's 
+-The density rule and the definition of specific gravity
+-How the continuity equation applies to a fluid
+-How Bernoulli's equation applies to nonviscous fluids, and its common applications
+-The definition of viscosity and how it affects other fluid concepts
+-The definitions of stress and strain, and how they relate to Young's modulus and shear modulus; have a basic understanding of what Young's modulus means
+
+6. Electrostatics
+-The definition of electric charge
+-Coulomb's law and how different charges exert a force on one another
+-What an electric field is and under what conditions it arises
+-Electric field due to charge, and the difference between a test charge and a source charge
+-The porperties of electric field lines
+-How to calculate the total electric field at one point due to multiple sources.
+-The effects on a conductor due to an external electric field
+-The definition of electric potential energy and how it applies to systems of point charges
+-The definition of electric potential, how electric potential is different than electric potential energy, and how electric potential is applied to point charges and parallel plates of opposite charge
+
+7. DC/AC circuits
+-The definition of current, and conventional current
+-The definition of direct current (DC)
+-How an electromotive force (emf) isn't a force but a potential difference, and how an emf generates current in a wire
+-The definition of resistance
+-Ohm's Law, and how it applies not only to circuits as a whole, but also to individual circuit elements (resistors, charged capacitors, batteries)
+-How resistors operate in series and in parallel in a circuit
+-How the internal resistance of a battery can influence a circuit
+-The definition of resistitvity and how it is applied
+-The function and properties of capacitors
+-The definition of capacitance and how much energy can be stored in a capacitor
+-How capacitors operate in series and in parallel in a circuit
+-What a dielectric is, and how insterting a dielectric into a capacitor influences its properties
+-How systems with current use power, and how much power is given off by a resistor due to heat
+-What alternating current is, and why we measure root-mean-square (rms) voltages and currents
+
+8. Magnetism
+-What magnetic fields are, and how they are generated
+-The formula for the magnetic field generated due to a current-carrying straight wire
+-The formula for the magnetic field generated due to a  current-carrying loop of wire
+-The magnetic force law, and when an object experiences a force due to a magnetic field
+-How to calculate the force on a charge in a magnetic field
+-How to calculate the force on a current-carrying wire in an external magnetic field
+
+9. Periodic Motion
+-What simple harmonic motion is
+-Hooke's Law, and how to apply it using Newton's Second Law
+-How to calculate the frequency, angular frequency, and the period of a system undergoing SHO
+-How simple harmonic motion applies to springs
+-How simple harmonic motion applies to pendulum, as opposed to springs
+
+10. Waves
+-The properties of waves: speed, amplitude, intensity, and transverse or longitudinal oscillation.
+-Under what conditions two waves with the same freuqency experience constructive and destrcutive interference, and what it means for two waves of the same frequency to be in phase, 90 out of phase, and 180 out of phase
+-How the general properties of waves apply to sound waves, including the decibel scale, pitch, beat frequency, and the Doppler effect
+-How standing waves are generated in oscillating systems of fixed length
+
+11. Light and Optics
+-The speed of light, and how it relates to frequency and wavelength
+-What photons are
+-How photons oscillate, what linear polarization is, and the effects of placing a polarizer in the path of a light wave
+-The law of reflection
+-The definition of the index of rferaction, Snell's law of refraction, and how to apply it
+-The circumstances under whcih total internal reflection occurs
+-The lens-makers euqation, the sign conventions for object distance, image distance, and focal length, what magnification is and how to apply it, and how to treat light traveling through multiple lenses.
+
+12. Atomic Phenomenon
+-The phenomena of atomic electron energy levels, and how the binding energy depends on principal quantum number.
+-How electrons can transition between energy levels by emitting or absorbing photons
+
+13. Nuclear phenomenon
+-What the atomic number and mass number of a nucleus mean in terms of what's inside
+-The relationship between rest mass and its equivalent energy
+-Why the mass of a nucleus doesn't equal the sum of the masses of its parts
+-That not all isotopes are stable, and that unstable nuclei undergo radioactive decay into other nuclei, the four common types of radioactive decay, and what the half-life of an unstable isotope is.
+
+
+C H E M I S T R Y
+-+-+-+-+-+-+-+-+-
+
+1. Atomic Structure/Periodic Table
+-How to determine the electronic configurations of atoms/ions
+-Period trends: 
+	-Atomic Radii
+	-Ionization Energy
+	-Electronegativity
+	-Electron affinity
+-The four quantum numbers: how they are related and what each defines.
+-The chemical properties of groups
+-Atomic absorption/emission and how to calculate photon energies
+
+2. Bonding
+-Intermolecular forces: dipole-dipole, dispersion, and H-bonding
+-Molecular/electronic gemotry
+-Resonance structures
+-How to calculate formal charges
+-Lewis structures
+-Dipole moment,polarity, and their effects on reactivity
+-The relation between bond length and bond energy
+
+3. Stoichiometry
+-How to calculate the molecular weight of a compound
+-How to balance a chemical equation
+-How to calculate molecular composition by percent mass
+-How molecular and empirical formulas are related
+-Basic reaction types: single/double displacement, combustion, decomposition
+-Limiting reagents and how to calculate percent yields
+
+4. Kinetics/Rate Processes/Equilibrium
+-Rate laws and reaction rate order
+-Le Chatelier's principle
+-Energy profiles of reactions
+-Chemical equilibrium, equilibirum constants, and law of mass action
+-Catalysts
+
+5. Thermochemistry
+-Enthalpy: exothermic/endothermic
+-State functions and thermodynamic terms (e.g. adiabatic, isobaric, etc.)
+-How to calculate enthalpy changes of chemical processes (e.g. heat of vaporization, heat of reaction, etc.)
+-Heat transfer and specific heat (calorimetry)
+-Reaction profiles
+-dG = dH - TdS
+-First law of thermodynamics = dE = Q - W
+-Gibb's free energy and spontaneity
+
+6. Gases
+-Kinetic molecular theory and its assumptions
+-How to calcualte average and root-mean-square molecular speeds, and rates of effusion and diffusion
+-The ideal gas law, including Boyle's and CHarles' laws.
+-How to calculate denisty and molar mass
+-Van der Waals' equation of state.
+
+7. Phase Changes/Phase Equilibria
+-Single and multiple-component phase diagrams
+-How to calculate colligative properties:
+	-Vapor pressure lowering
+	-Boiling point elevation
+	-Freezing point depression
+	-Osmotic pressure
+-Phase equilibria and phase properties
+
+8. Solutions
+-Common ions by name, formula, and charge
+-How to calculate ion concentration by using Ksp, or vice versa
+-How to calculate solution concentration: 
+	-Mole fraction
+	-Molarity
+	-Molality
+	-Normality
+	-Solution composition by percent mass
+-What the ion ion effect is
+
+9. Acids and Bases
+-How to identify an Arrhenius/Bronsted/Lewis acid or base
+-How to identify conjugate acid-base pairs
+-The conversion between p-scale and concentration/equilibrium constant
+-How to interpret titration curves
+-Strong acids/bases and weak acid/base solutions
+-Neutralization reactions and hydrolysis
+-Amphoteric species and polyprotic acids
+-Henderson-Hasselbalch equation
+
+10. Electrochemistry
+-The difference between electrolytic and galvanic cells and how it affects the designation of th cathod, anode, reduction electrode, oxidation electrode, electrode charge, electron flow, and ion flow in electrochemical cells.
+-How to calculate cell potential using reduction potentials
+-How to balance redox reactions using half-reactions
+-Oxidation numbers
+-Common oxidizing and reducing agents
+-How to convert between EMF, Gibbs' free energy, and equilibrium
+
+
+ORGANIC CHEMISTRY
+-+-+-+-+-+-+-+-+-
+
+1. Molecular Structure: Hybridization, Bonding, Polarity, Resonance, Physical Properties
+-Be able to identify the hybridization of carbon atoms in different molecules
+-Know the implications of hybridization on molecular geometry, bond order, etc.
+-Be familiar with the characterisstics of sigma versus pi bonds
+-Be able to assign formal charges to atoms in a molecule
+-Be able to identify polar bonds and polar molecules
+-Be able to draw resonance structures and assess their stability (and hence contribution)
+-Know how inductive effects and resonacen stabilize charge
+-Be able to identify conjugated systems, and know how conjugation affects the stability of a compound
+-Know the implications of resonance on hybridization and geometry.
+-Be able to identify compounds capable of hydrogen bonding
+-Know the trend of physical properties in hydrocarbons
+-Know the common reactions of hydrocarbons and how structural factors affect them: strain, radical stability, etc..
+-Be able to classify a carbon atom as methyl, primary, secondary, tertiary, or quaternary, and know the implications on reactivity
+-KNow how the stability of a molecule can be quantified in terms of heat and combustion, heat of hydrogenation, etc.
+-Know how polarity, hydrogen bonding, molecular weight, etc. affect physical properties of compounds.
+
+2. Functional groups
+-Be able to identify the functional groups present in a molecule
+-Know how to interpret condensed structural formulas
+-Be aware of major characteritics of functional groups (hydrogen bonding, acidity, solubility, etc.)
+-Know the fundamental rules of nomenclature for each family of compounds
+
+3. Acidity and Basicity
+-Be able to identify the most acidic proton in an organic molecule
+-Know the factors affecting acidity and basicity
+-Be able to account for the acidity of carboxylic acids, phenols, etc
+-Be able to predict or rationalize trends in acidity and basicity
+
+4. Isomerism
+-Know the definitions of the different isomers
+-Be able to identify the isomeric relationship between two compounds
+-Be able to identify the number of stereogenic centers in an organic molecule
+-Be able to classify a compound as chiral or achiral
+-Know the origins of optical activity (specific rotation)
+-Be able to identify meso compounds
+-Be able to assign the absulte configuration of a chiral center
+-Be able to interpret different representations of compounds: Fischer vs. Newman, etc
+-Know the conformational dynamics of ethane, butane, substituted cyclohexanes, etc.
+-Know the differences/similarities in chemical and phyiscal properties between two isomers
+-Be able to identify means of spearating different isomer types
+
+5. Reactions and Syntheses: General Principles
+-Be able to apply a reaction scheme given in a  passage to a new set of reactants
+-Be able to keep tract of how bonds are formed and broken ina  aigven mechanism by "pushing electrons," be able to apply a given but previously unknown mechanism to specific compounds
+-Be able to visualize the mechanism in three-dimensional space to deduce the stereochemistry of the product
+-Be able to deduce the structure of transition states and intermediates in a given reaction
+-For a multistep synthesis, be abel to recognize what happens at each step (what the step accomplishes)
+-Be able to predict where an isotopic label ends up if one is employed in the reaction
+
+6. Sn1, Sn2, E1, E2
+-Know the mechanism of each reaction
+-Know the rate law of each reaction
+-Be able to identify reaction profiles of single-step vs. multistep reactions
+-Be able to predict (in simple situations) which reaction is likely to predominate
+-Be aware of the synthetic uses of the reactions
+-Know the factors affecting the rate of each reaction
+-Be able to predict the relative stability of carbocation intermediates
+-Be able to identify good nucleophiles and good leaving groups
+-Know the sterochemical implications of Sn1 versus Sn2
+-Be aware of some specific exampels: dehydration, solvolysis, Williamson ether synthesis, etc.
+-Be able to apply Zaitsev's rule to determine the most stable elmiination product
+
+7. Addition Reactions
+-Know the difference between Markovnikov and anti-Markovnikov addition; be able to predict the addition product of each
+-Know the fundamental concepts of radical cehmistry
+-Know the mechanism of anti- addition via a cyclic ion intermediate; be able to predict the product (and its most stable comformation)
+-Know the sterochemistry of catalytic hydrogenation
+
+8. Aromaticity and EAS
+-Be able to identify aromatic compounds by applying Huckel's rule, etc
+-Be aware of the special stability of aromatic compounds
+-Be familiar with the electrophilic aromatic substitution reactions: common reagents and catalysts
+-Know the rate and orientation effects of different substituents: be able to classify substituents as ortho/para- or meta-directing; activating vs. deactivating
+
+9. Carbonyl Chemistry
+-Be able to indefity different families of compounds containing the carbonyl group
+-Be aware of the characteristics of the carbonyl group and how they affect its chemical reactivity
+-Know the nomenclature of simple carbonyl compounds
+-Know the relative position of different carbonyl compounds in the oxidation-reduction scheme
+-Know the common oxidizing  and reducing agents used on (or used to synthesize) carbonyl compounds
+-Know the mechanism of of addition reactions of aldehydes and ketons: hemiacetal formation
+-Know the mechanism of nucleophilic acyl substitution reactions in both acidic and basic conditions, and how these reactions can be used to synthesize carboxylic acid derivatives
+-KNow the terms for specific examples: esterification, hydrolysis, spanification
+-Know the relative reactivity of different carboxylic acid derivatives
+-Be aware of the acidity of alpha protons, and how abstraction of an alpha proton generates a carbonyl-containg nucleophile (leading to aldol condensation)
+-Be aware of keto-enol tautomerism
+
+10. Amines
+-Know the rules for naming simple amines
+-Be able to classify an amine as primary, secondary, or tertiary
+-Kne the sterochemical and physical properties fo amines
+-Know how amines can form quaternary salts
+-Know the factors affeting the basicity of amines, inclduing aromatic amines
+-Know the key ways to synthesize amines
+-Know how amines act as nucleophiles in carbonyl reactions
+
+11. Carbohydrate chemistry
+-Be able to classify monosaccharides as aldoses or ketoses
+-Be able to identify stereogenic centers in straight-chain monosaccharides
+-Be able to classify a monosaccharide as a D- or L- sugar
+-Be able to characterize the isomeric relationship between monosaccharides
+-Be aware of the cylic form of hexoses in aqueous solution
+-Be able to apply the principles of conformational dynamics to the cyclic form of hexoese
+-KNow what epimers and anomers are
+-Be aware of some of the common reations of monosaccharides
+-Know how monosccharides form disccharides, and how the linkage can be broken
+
+12. Protein Chemistry
+-Be aware of the amphoteric  nature of amino acids
+-Be aware of the presence of a chiral center in an amino acid
+-Be able to predict the predominant form of an amino acid in an acidic or basic environment
+-Be able to classify amino acids according to their side chains
+-Know the characteristics of a peptide bond
+-know the different levesl of protein structure
+-Know the special role played by certain amino acids (proline, cystine) in the structure of a protein
+-Know the importance of the isoelectric point of an amino acid or protein
+
+13. Separation and Purification Techniques
+-Be aware that the presence of impurities is often revealed by broadening and depression of melting point
+-Know the principles at work in common tehcniques used to separate and purify compounds
+-Be able to select the most efficient technique in separating two given compounds
+-Be able to apply acid-base principles to extraction based on solubility
+-Be able to apply principles of intermolecular forces to chromatographic techniques
+
+
+14. Spectroscopy
+-Know the principles at work in different types of spectroscopy
+-Be able to identify the spectroscopic technique that would be most effective in distinguishing between given compounds
+-Know the IR frequency of common functional groups
+-Know to how interpret a proton NMR spectrum: splitting, chemical shift, et.c
+-Know the chemical shift of common proton types
+-Be able to predict general features of the proton NMR spectrum of a given organic compound
+-Be able to identify a compound based on a combination of IR and NMR (and perhaps UV-vis) data
+
+
+BIOLOGY
+-+-+-+-
+
+1. Molecular Biology
+-Enzymes as biological catalysts
+-Enzyme structure and function
+-Competitive, noncompetitive, and feedback inhibition
+-How enzymes are affected by changes in pH and temperature
+-How a change in 3D structure affects an enzyme
+-The difference between normal chromosomal inheritance and mitochondrial inheritance
+-The basic structure of DNA and RNA
+-How DNA is transcribed to RNA; regulation of transcription
+-How RNA is translated to a polypeptide; regulation of translation
+-The structure and function of ribosome
+-Post-transcriptional modifications
+
+2. Microbiology
+-The basic structure of a bacterium
+-Bacterial reproduction through binary fission
+-How plasmids function in the transmission of bacterial genetic material
+-The different processes by which bacteria cna exhange genes: conjugation, transformation, and transduction
+-The basic structure of a virus
+-How bacteria and viruses differ
+-The relative sizes of baceria and virsues
+-The general life cycle of a virus
+-The mechanism of F plasmid transfer
+-The characteristics of fungi: structural types, life history, and physiology
+
+3. Generalized Eukaryotic Cell
+-The functions of the major organelles
+-The basic processes of cellular respieration and where they take place
+-How the size of a typical eukaryotic cell compares to the size of a bacterium or virus
+-Molarity and how change in molarity affects a cell
+-Structure and functions of the plasma membrane
+-Osmosis, passive transport, active transport, endocytosis, exocytosis
+-The structure and functions of the cytoskeleton
+-Mitosis: where it falls in the cell cycle
+-Mitosis: the events that occur during each of the four phases
+-The differences and similarities between mitosis and meiosis
+
+4. Specialized Eukaryotic Cells and Tissues
+-The basic structure of nerve and muscle cells
+-How nerve cells and muscle cells are specialized for their unique funcitonins
+-Membrane potential, resting potential, and action potnetial
+-Saltatory conduction
+-How calcium functions in the regualtion of muscle contraction
+-The characteristics of different types of muscle: striated, smooth, and cardiac
+-The characteristics of cartilage
+
+5. Nervous and Endocrine Systems
+-The organization of the nervous system
+-The differences between sensor and effector neurons
+-How a nervous impulse is transmitted across the synpase
+-The sympathetic and parasympathetic nervous systems (flight/flight vs. rest/digest)
+-The structure of the ear
+-The mechanism of hearing
+-The structure of the eye
+-The mechanism of vision
+-The mechanism of taste
+-The mechanism of smell
+-How peptide hormones utilize second messengers
+-The major endocrine glands, what hormones they produce, what organs the hormones act on, and what their effects are
+-Negative and positive feedback
+-The cellular mechanisms of hormone action
+-Hormone transport
+-Homeostasis
+-How paris of hormones function in feedback loops to maintain homeostasis
+-How a reflex arc works
+
+6. Circulatory, Lymphatic, and Immune systems
+-The functions of the circulatory system
+-The role of the circulatory stems in thermoregulation
+-The structure and function of the heart and blood vessels
+-The path of blood flow through the body
+-Systolic and diastolic blood pressure
+-The composition of blood
+-The characteristics of RBCs that make them ideal for oxygen transportation
+-The major organs and structures of the immune system
+-How the body develops tolerance to "self" antigens
+-Differences between the specific and nonspecific immune responses
+-The roles of T and B lymphocytes in the immune response
+-Where the cells of the immune system are produced and where they mature
+-Antigens, antibodies, and antigen-antibody interaction
+-The structures and functions of the lymphatic system
+
+7. Digestive and Excretory systems
+-The structures and functions of the digestive system
+-Where each of the following is digested: protein, fat, carbohydrate
+-What organs produce/store the various digestive enzymes, their substrates, and where they are secreted.
+-How the structure of the intestine enhances absorption of nutrients
+-The structure and function of the kidney
+-The structure and function of the nephron
+-How urine is formed
+
+8. Muscle and Skeletal systems
+- What types of protein make up muscle fibers
+-The functions of muscle
+-The differences between voluntary and involuntary muscles
+-How muscles contract, and the role of Ca++ and ATP
+-The functions of the skeletal system
+-The structure of bone
+-The role of bone as a calcium reservoir
+-The structure and function of joints
+-The role of cartilage, ligaments, and tendons
+
+9. Respiratory and Skin Systems
+-The structure of the respiratory sytstem
+-The mechanics underlying ventilation
+-Where gas exchange takes palce in the lung
+-The role of surfactant in gas exchange
+-The role of the respiratory ststem in thermotregulation, protection against diase, and protection against particulate matter
+-The basic anatomy of the skin
+-How the skin helps to regulate temperature
+-The role of the skin as an excretory organ
+-The role of the skin as a protective barrier
+
+10. Reproductive System and Development
+-The structures and functions of the male and female reproductive tracts
+-The processes of spermatogenesis and oogensis (similarities and dissimilarities)
+-The structure and functions of the placenta
+-Embryogenesis:
+	-fertilization
+	-cleavage
+	-blastulation,
+	-Gastrulation
+	-Neurulation
+-The major structure derived from the three germ layers: ectoderm, mesoderm, endoderm
+-The mechanisms of development: cell specialization, determination, differentiation, induction
+
+11. Genetics and Evolution
+-The advantages of sexual reproduction over asexual reproduction
+-How to use a Punnett square to solve basic genetics problems
+-Meiosis: where it falls in the cell cycle
+-Meiosis: the events that occur during each of the phases
+-The differences and similarities between mitosis and meiosis
+-How meisosis and random mutation increase the genetic variability in a population
+-How the K/P/C/O/F/G/S works
+-The concept of "fitness" in evolutionary terms
+-The conditions for Hardy-Weinberg equilibrium
+-How to apply H-W equations to population genetics problems.
+
+
+
+
+
+
+
+
+
