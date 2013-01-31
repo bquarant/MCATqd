@@ -71,7 +71,7 @@ P H Y S I C S
 -Coulomb's law and how different charges exert a force on one another
 -What an electric field is and under what conditions it arises
 -Electric field due to charge, and the difference between a test charge and a source charge
--The porperties of electric field lines
+-The properties of electric field lines
 -How to calculate the total electric field at one point due to multiple sources.
 -The effects on a conductor due to an external electric field
 -The definition of electric potential energy and how it applies to systems of point charges
@@ -85,7 +85,7 @@ P H Y S I C S
 -Ohm's Law, and how it applies not only to circuits as a whole, but also to individual circuit elements (resistors, charged capacitors, batteries)
 -How resistors operate in series and in parallel in a circuit
 -How the internal resistance of a battery can influence a circuit
--The definition of resistitvity and how it is applied
+-The definition of resistivity and how it is applied
 -The function and properties of capacitors
 -The definition of capacitance and how much energy can be stored in a capacitor
 -How capacitors operate in series and in parallel in a circuit

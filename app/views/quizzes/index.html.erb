@@ -22,21 +22,23 @@
       </ul>
     </div>
   <% end %>
-	<% @question.options.each do |option| %>
-		<div class="form-inline option-text" style="margin-left: 5%">
-			<%= form.radio_button :answer, option.id, :style=>"margin-bottom: 7px;"%>
-			<%= form.label "option_text", option.content%>			
-			<br>
-			<%= form.hidden_field :question_id, :value => @question.id  %>
-			<% if user_signed_in? %>
-			<%= form.hidden_field :user_id, :value => current_user.id  %>
-			<% else %>
-				<% if false %>
+	 <div class="form form-horizontal option-text">
+		<table>
+		<% @question.options.each do |option| %>
+		<tr>
+			<td style="vertical-align:text-top;"><%= form.radio_button :answer, option.id %></td>
+			<td><%= form.label "option_text", option.content%></td>
+				<%= form.hidden_field :question_id, :value => @question.id  %>
+				<% if user_signed_in? %>
+				<%= form.hidden_field :user_id, :value => current_user.id  %>
+				<% else %>
+					<% if false %>
+					<% end %>
 				<% end %>
-			<% end %>
-			
-		</div>
-	<% end %>
-	<br>
-	<center><%= form.submit "Submit Answer", :class=>"btn btn-large btn-primary" %></center>
-<% end %>
+		</tr>
+		<% end %>
+		</table>
+		<br>
+		<center><%= form.submit "Submit Answer", :class=>"btn btn-large btn-primary" %></center>
+		<% end %>
+	 </div>

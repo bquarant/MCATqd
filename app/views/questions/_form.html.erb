@@ -1,5 +1,6 @@
 <%= form_for(@question) do |f| %>
 
+<% categories = ["Biology", "Chemistry", "Physics", "Organic Chemistry"] %>
 <!-- TODO: Build error handling for question submissions -->
   <% if @question.errors.any? %>
     <div id="error_explanation">
@@ -20,6 +21,10 @@
 	Category:
 	<br>
 	<%= f.text_field :category, :style=>"width: 25%" %>
+	<br>
+	Subcategory:
+	<br>
+	<%= f.text_field :sub_category, :style=>"width: 25%" %>
   </div>
 
 <table class="table" style="border-color: #FFF !important;">

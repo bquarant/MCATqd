@@ -1,4 +1,7 @@
-<!-- Render a form to submit answers for each question -->
+<!-- Question#show
+Should:
+Render a form to submit answers for each question -->
+
 <div class="lead">
 <h3><%= @question.content%></h3>
 </div>
@@ -16,11 +19,13 @@
 	      </ul>
 	    </div>
 	  <% end %>
+	
+	 <div class="form form-horizontal option-text">
+		<table>
 		<% @question.options.each do |option| %>
-			<div class="form-inline option-text" style="margin-left: 5%">
-				<%= form.radio_button :answer, option.id, :style=>"margin-bottom: 7px;"%>
-				<%= form.label "option_text", option.content%>			
-				<br>
+		<tr>
+			<td style="vertical-align:text-top;"><%= form.radio_button :answer, option.id %></td>
+  			<td><%= form.label "option_text", option.content%></td>
 				<%= form.hidden_field :question_id, :value => @question.id  %>
 				<% if user_signed_in? %>
 				<%= form.hidden_field :user_id, :value => current_user.id  %>
@@ -28,12 +33,13 @@
 					<% if false %>
 					<% end %>
 				<% end %>
-
-			</div>
+		<tr>
 		<% end %>
 		<br>
+		</table>
 		<center><%= form.submit "Submit Answer", :class=>"btn btn-large btn-primary" %></center>
-	<% end %>
+		<% end %>
+	 </div>
 
 
 <!-- Edit links should only be available to administrators -->

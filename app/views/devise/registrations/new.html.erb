@@ -4,7 +4,7 @@
 	We'll always offer you new, free, daily maximum-difficulty MCAT test preparation questions.  </p>
 	<br>
 <p class="lead" style="text-align:justify">
-	If you're serious about scoring highly on the MCAT, <strong>for  <s>just $4.99 with our introductory offer</s> free</strong> you can register to gain access to our entire question database, track your performance on our questions over time, MCAT study schedule planning, and access to the individuals who write the questions in case you need more help.</p>
+	If you're serious about scoring highly on the MCAT, <strong>sign up for free</strong> to gain access to our entire question database, track your performance on our questions over time, MCAT study schedule planning, and access to the individuals who write the questions in case you need more help.</p>
 <br>
 <p style="text-align:justify">
 </p> 
@@ -15,11 +15,9 @@
 							   :style=>"margin-left:15%;"}) do |f| %>
 							
   	<%= f.error_notification %>
-    <%= f.input :email, :required => true, :autofocus => true, :label =>"Email:&nbsp;" %>
-    <%= f.input :password, :required => true, :label =>"Password:&nbsp;" %>
-    <%= f.input :password_confirmation, :required => true, :label =>"Confirmation:&nbsp;" %>
+    <%= f.input :email, :required => true, :autofocus => true, :label =>"Email" %>
+    <%= f.input :password, :required => true, :label =>"Password" %>
+    <%= f.input :password_confirmation, :required => true, :label =>"Confirm Password" %>
 	<br>
     <center><%= f.button :submit, "Sign up!", :class => "btn btn-success btn-large", :style=>"margin-left:-20%;"  %></center>
 <% end %>
-
-<!-- STRIPE BUTTON STUFF -->

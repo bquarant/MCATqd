@@ -1,0 +1,55 @@
+Physics
+Kinematics
+Newtonian Mechanics
+Energy and Momentum
+Thermodynamics
+Fluids and Solids
+Electrostatics
+DC/AC circuits
+Magnetism
+Periodic Motion
+Waves
+Light and Optics
+Atomic Phenomenon
+Nuclear phenomenon
+
+Chemistry
+Atomic Structure/Periodic Table
+Bonding
+Stoichiometry
+Kinetics/Rate Processes/Equilibrium
+Thermochemistry
+Gases
+Phase Changes/Phase Equilibria
+Solutions
+Acids and Bases
+Electrochemistry
+
+Organic Chemistry
+Molecular Structure: Hybridization, Bonding, Polarity, Resonance, Physical Properties
+Functional groups
+Acidity and Basicity
+Isomerism
+Reactions and Syntheses: General Principles
+Reactions: Sn1, Sn2, E1, E2
+Addition Reactions
+Aromaticity and EAS
+Carbonyl chemistry
+Amines
+Carbohydrate chemistry
+Protein chemistry
+Separation and Purification Techniques
+Spectroscopy
+
+Biology
+Molecular Biology
+Microbiology
+Generalized Eukaryotic Cell
+Specialized Eukaryotic Cells and Tissues
+Nervous and Endocrine Systems
+Circulatory, Lymphatic, and Immune systems
+Digestive and Excretory systems
+Muscle and Skeletal systems
+Respiratory and Skin Systems
+Reproductive System and Development
+Genetics and Evolution

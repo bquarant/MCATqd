@@ -11,6 +11,7 @@ Mcatqd::Application.routes.draw do
   resources :options
   resources :quizzes
 
+  #Note to self: quizzes#index is NOT questions#show!!
   root :to => "quizzes#index" 
   
   get "about/index"

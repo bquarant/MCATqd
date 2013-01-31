@@ -4,7 +4,8 @@
   <tr>
     <th>Question Stem</th>
 	<th>Category</th>
-    <th></th>
+    <th>Subcategory</th>
+	<th></th>
 	<% if current_user.is_admin == 1 %>
     <th></th>
     <th></th>
@@ -15,8 +16,8 @@
 <% @questions.each do |question| %>
   <tr>
     <td><%= question.content %></td>
-	<!-- TODO: Display only if current_user has a paid subscription  -->
 	<td><center><%= question.category %></center></td>
+	<td><center><%= question.sub_category %></center></td>
     <td><%= link_to 'Show', question %></td>
 
 <!-- Display edit and destroy links only if current_user is an administrator -->
