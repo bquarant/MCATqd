@@ -29,7 +29,7 @@
 <% end %>
 </table>
 <br />
-
+<div class="flickr_pagination"><%= will_paginate @questions %></div>
 <!-- Display "Create New Question" button only if current_user is an administrator -->
 <%if current_user.is_admin == 1 %>
 <center><%= link_to 'Create New Question', new_question_path, :class=>"btn btn-large btn-primary" %></center>

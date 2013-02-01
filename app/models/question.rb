@@ -14,5 +14,7 @@ class Question < ActiveRecord::Base
   has_many :options, :dependent => :destroy
   
   accepts_nested_attributes_for :options, :answers, :category, :subcategory
+  
+  self.per_page = 10
 
 end

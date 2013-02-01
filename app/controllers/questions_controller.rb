@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
   def index
-    @questions = Question.order("created_at DESC")
+    @questions = Question.page(params[:page]).order('created_at DESC')
     
     respond_to do |format|
       format.html # index.html.erb

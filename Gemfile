@@ -8,6 +8,7 @@ gem 'rack'
 gem 'thin'
 gem 'simple_form'
 gem 'devise'
+gem 'will_paginate'
 
 
 group :assets do
