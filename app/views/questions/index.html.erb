@@ -17,7 +17,7 @@
   <tr>
     <td><%= question.content %></td>
 	<td><center><%= Category.find(question.category_id).category %></center></td>
-	<td><center><!-- question.sub_category %>--></center></td>
+	<td><center><%= Subcategory.find(question.subcategory_id).subcategory %></center></td>
     <td><%= link_to 'Show', question %></td>
 <!-- Display edit and destroy links only if current_user is an administrator -->
 	<% if current_user.is_admin == 1 %>

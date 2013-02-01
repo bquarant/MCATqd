@@ -18,10 +18,13 @@
 	<br>
 	<%= f.text_field :content, :style=>"width: 100%" %>
 	<br>
-	Category:
+	Subject:
 	<br>
 	<%= f.collection_select(:category_id, Category.all, :id, :category ) %>
 	<br>
+	Focus:
+	<br>
+	<%= f.collection_select(:subcategory_id, Subcategory.all, :id, :subcategory ) %>
   </div>
 
 <table class="table" style="border-color: #FFF !important;">

@@ -3,5 +3,5 @@ class Subcategory < ActiveRecord::Base
   
   #Subcategory-Category Relationship
   belongs_to :category
-  
+
 end

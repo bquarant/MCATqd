@@ -1,0 +1,72 @@
+#Start up scripts to run...
+
+# Generate Categories
+Category.new(:category => "Biology").save				#1
+Category.new(:category => "Chemistry").save				#2
+Category.new(:category => "Physics").save				#3
+Category.new(:category => "Organic Chemistry").save		#4
+Category.new(:category => "Verbal Reasoning").save		#5
+
+# Generate Subcategories
+
+## Biology
+
+Subcategory.new(:subcategory => "Molecular Biology", :category_id => 1).save
+Subcategory.new(:subcategory => "Microbiology", :category_id => 1).save
+Subcategory.new(:subcategory => "Generalized Eukaryotic Cell", :category_id => 1).save
+Subcategory.new(:subcategory => "Specialized Eukaryotic Cells and Tissues", :category_id => 1).save
+Subcategory.new(:subcategory => "Nervous and Endocrine Systems", :category_id => 1).save
+Subcategory.new(:subcategory => "Circulatory, Lymphatic, and Immune systems", :category_id => 1).save
+Subcategory.new(:subcategory => "Digestive and Excretory systems", :category_id => 1).save
+Subcategory.new(:subcategory => "Muscle and Skeletal systems", :category_id => 1).save
+Subcategory.new(:subcategory => "Respiratory and Skin Systems", :category_id => 1).save
+Subcategory.new(:subcategory => "Reproductive System and Development", :category_id => 1).save
+Subcategory.new(:subcategory => "Genetics and Evolution", :category_id => 1).save
+
+## Chemistry
+
+Subcategory.new(:subcategory => "Atomic Structure/Periodic Table", :category_id => 2).save
+Subcategory.new(:subcategory => "Bonding", :category_id => 2).save
+Subcategory.new(:subcategory => "Stoichiometry", :category_id => 2).save
+Subcategory.new(:subcategory => "Kinetics/Rate Processes/Equilibrium", :category_id => 2).save
+Subcategory.new(:subcategory => "Thermochemistry", :category_id => 2).save
+Subcategory.new(:subcategory => "Gases", :category_id => 2).save
+Subcategory.new(:subcategory => "Phase Changes/Phase Equilibria", :category_id => 2).save
+Subcategory.new(:subcategory => "Solutions", :category_id => 2).save
+Subcategory.new(:subcategory => "Acids and Bases", :category_id => 2).save
+Subcategory.new(:subcategory => "Electrochemistry", :category_id => 2).save
+
+## Physics
+
+Subcategory.new(:subcategory => "Kinematics", :category_id => 3).save
+Subcategory.new(:subcategory => "Newtonian Mechanics", :category_id => 3).save
+Subcategory.new(:subcategory => "Energy and Momentum", :category_id => 3).save
+Subcategory.new(:subcategory => "Thermodynamics", :category_id => 3).save
+Subcategory.new(:subcategory => "Fluids and Solids", :category_id => 3).save
+Subcategory.new(:subcategory => "Electrostatics", :category_id => 3).save
+Subcategory.new(:subcategory => "DC/AC circuits", :category_id => 3).save
+Subcategory.new(:subcategory => "Magnetism", :category_id => 3).save
+Subcategory.new(:subcategory => "Periodic Motion", :category_id => 3).save
+Subcategory.new(:subcategory => "Waves", :category_id => 3).save
+Subcategory.new(:subcategory => "Light and Optics", :category_id => 3).save
+Subcategory.new(:subcategory => "Atomic Phenomenon", :category_id => 3).save
+Subcategory.new(:subcategory => "Nuclear Phenomenon", :category_id => 3).save
+
+
+## Organic Chemistry
+
+Subcategory.new(:subcategory => "Molecular Structure", :category_id => 4).save
+Subcategory.new(:subcategory => "Functional groups", :category_id => 4).save
+Subcategory.new(:subcategory => "Acidity and Basicity", :category_id => 4).save
+Subcategory.new(:subcategory => "Isomerism", :category_id => 4).save
+Subcategory.new(:subcategory => "Reactions and Syntheses: General Principles", :category_id => 4).save
+Subcategory.new(:subcategory => "Sn1, Sn2, E1, E2", :category_id => 4).save
+Subcategory.new(:subcategory => "Addition Reactions", :category_id => 4).save
+Subcategory.new(:subcategory => "Aromaticity and EAS", :category_id => 4).save
+Subcategory.new(:subcategory => "Carbonyl Chemistry", :category_id => 4).save
+Subcategory.new(:subcategory => "Amines", :category_id => 4).save
+Subcategory.new(:subcategory => "Carbohydrate chemistry", :category_id => 4).save
+Subcategory.new(:subcategory => "Protein Chemistry", :category_id => 4).save
+Subcategory.new(:subcategory => "Separation and Purification Techniques", :category_id => 4).save
+Subcategory.new(:subcategory => "Spectroscopy", :category_id => 4).save
+
