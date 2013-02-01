@@ -23,6 +23,7 @@ group :production do
 end
 
 group :development, :test do
+  gem "rails-erd"
   gem 'rspec-rails', '2.11.0'
   gem 'webrat', '0.7.1'
   # TODO: We should be using postgres in development as well, I think I need to install it?
