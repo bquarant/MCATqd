@@ -53,7 +53,7 @@
 	            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
 					<%= render "devise/sessions/form"%>
 	            </div>
-
+			  </li>
 		<% end %>
         </ul>
         <h3 class="muted"><%= link_to('MCATqd.com', root_path) %></h3>
@@ -79,7 +79,7 @@
 	<hr>
 
       <div class="footer pull-right" style="font-size: 12px;">
-        <p>MCATqd.com | <a href="mailto:brian@quaran.to">?'s</a></p>
+        <p>MCATqd.com | <%= link_to 'Disclaimer', "about/disclaimer"  %> | <a href="mailto:brian@quaran.to">?'s</a></p>
       </div>
 </div> <!-- /container -->
 

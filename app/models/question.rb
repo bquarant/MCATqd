@@ -17,5 +17,5 @@ class Question < ActiveRecord::Base
   accepts_nested_attributes_for :options, :answers, :category, :subcategory
   
   #Define Question#index pagination rule
-  self.per_page = 6
+  self.per_page = 6 
 end
