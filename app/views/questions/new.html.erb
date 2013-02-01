@@ -3,7 +3,7 @@ Should:
  Display form to create new question, only if current_user is an administrator -->
 
 <% if current_user.is_admin ==1%>
-	<h2>Create a new Question</h2>
+	<h2>Let's write a new question!</h2>
 	<%= render 'form' %>
 <% else %>
 	<center><h2>Sorry, this is only for administrators.</h2></center>

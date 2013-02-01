@@ -65,3 +65,17 @@ Subcategory.new(:subcategory => "Separation and Purification Techniques", :categ
 Subcategory.new(:subcategory => "Spectroscopy", :category_id => 4).save
 
 # Generate Sample Data
+
+Which of the following organelles most resembles the Golgi apparatus when an intact eukaryotic cell is viewed under the electron microscope?
+
+A) Nucleolus
+Sorry! The nucleolus is a small dense spherical structure in the nucleus of a cell during interphase.
+
+B) Mitochondrion
+Sorry! Mitochondria are organelles found in large numbers in most cells, in which the biochemical processes of respiration and energy production occur.
+
+C) Plasma membrane
+Close, but not correct. The plasma membrane is a microscopic membrane of lipids and proteins that forms the external boundary of the cytoplasm of a cell or encloses a vacuole, and...
+
+D) Smooth endoplasmic reticulum
+Correct! The endoplasmic reticulum (ER) is an eukaryotic organelle that forms an interconnected network of tubules, vesicles, and cisternae, which in other words looks like it has many folds, which is how the Golgi apparatus also appears.
