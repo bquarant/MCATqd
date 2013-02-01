@@ -51,6 +51,13 @@
  .marketing {
    margin: 60px 0;
  }
+ .marketing h4 {
+	text-align: center;
+}
+
+.marketing p{
+	text-align: justify;
+}
  .marketing p + h4 {
    margin-top: 28px;
  }
