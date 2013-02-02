@@ -1,7 +1,8 @@
 /*
+ *= require jquery-tablesorter/theme.default
  *= require_self
- *= require_tree .
- */
+ *= require_tree . 
+*/
 
  * {
 	/* TODO: This pathetic piece of code controls the custom TypeKit font 

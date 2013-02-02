@@ -9,7 +9,7 @@ gem 'thin'
 gem 'simple_form'
 gem 'devise'
 gem 'will_paginate'
-
+gem 'jquery-tablesorter'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
