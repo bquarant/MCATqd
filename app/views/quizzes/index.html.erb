@@ -1,10 +1,4 @@
-<!-- Display today's date -->
-<div class="pull-right"><h4><strong>Today's Question - <script type="text/javascript">
-		var d = new Date();
-		document.write(d.getMonth()+1 +"/" +d.getDate() + "/" +d.getFullYear());
-		</script></strong></h4>
-
-</div>
+<div class="pull-right"><h4><strong>Today's Question - <%= 	@question.created_at.strftime("%m/%d/%y") %></div>
 <br>
 <br>
 <!-- Display the latest question and response options -->

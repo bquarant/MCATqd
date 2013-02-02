@@ -1,5 +1,5 @@
 class Question < ActiveRecord::Base
-  attr_accessible :content, :category_id, :subcategory_id, :prerequisite_attributes, :options_attributes, :answer_attributes, :category_attributes, :subcategory_attributes
+  attr_accessible :created_at, :content, :category_id, :subcategory_id, :prerequisite_attributes, :options_attributes, :answer_attributes, :category_attributes, :subcategory_attributes
   
   #Question-Answer Relationship
   has_many :answers

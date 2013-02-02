@@ -2,6 +2,7 @@
 <br>
 <table class="table table-hover table-striped">
   <tr>
+	<th>Date</th>
     <th>Question</th>
 	<th><center>Subject</center></th>
     <th><center>Focus</center></th>
@@ -15,6 +16,7 @@
 
 <% @questions.each do |question| %>
   <tr>
+	<td><%= question.created_at.strftime("%m/%d/%y") %></td>
     <td><%= question.content %></td>
 	<td><center><%= Category.find(question.category_id).category %></center></td>
 	<td><center><%= Subcategory.find(question.subcategory_id).subcategory %></center></td>
