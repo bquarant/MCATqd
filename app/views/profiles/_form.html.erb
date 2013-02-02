@@ -1,0 +1,11 @@
+<%= simple_form_for(@profile) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+     <%= f.input :first_name %>
+     <%= f.input :last_name %>
+	 <%= f.input :blurb %>
+  </div>
+
+<center><%= f.submit "Save changes", :class=>"btn btn-large btn-primary" %></center>
+<% end %>

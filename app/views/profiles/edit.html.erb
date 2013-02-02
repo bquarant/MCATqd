@@ -1,0 +1,7 @@
+<% if current_user.is_admin == 1 or current_user.id == @profile.user_id %>
+<h3>Edit your profile</h3>
+
+<%= render 'form' %>
+<% else %>
+<h3><center>Hey! You shouldn't do that!</center></h3>
+<% end %>

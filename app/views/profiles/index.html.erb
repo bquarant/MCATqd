@@ -1,0 +1,27 @@
+<!-- TODO: Clean this up, this should be administrative viewing only though in order to protect User's information -->
+<%if current_user.is_admin == 1 %>
+<h3><center>User profiles</center></h3>
+
+<table class="table table-striped table-hover"> 
+  <tr>
+	<th>User</th>
+    <th>Blurb</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @profiles.each do |profile| %>
+  <tr>
+    <td><%= profile.user_id %></td>
+    <td><%= profile.blurb %></td>
+    <td><%= link_to 'Show', profile %></td>
+    <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+    <td><%= link_to 'Destroy', profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+<% else %>
+
+<h3><center>Sorry!</center></h3>
+<% end %>

@@ -4,6 +4,7 @@ Mcatqd::Application.routes.draw do
 
   devise_for :users do
     resources :answers
+    resources :profiles
   end
 
   resources :answers
