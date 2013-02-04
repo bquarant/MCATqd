@@ -1,4 +1,5 @@
 /*
+ *= require font-awesome
  *= require jquery-tablesorter/theme.default
  *= require_self
  *= require_tree . 
