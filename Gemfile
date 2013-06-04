@@ -11,6 +11,7 @@ gem 'devise'
 gem 'will_paginate'
 gem 'jquery-tablesorter'
 gem 'font-awesome-rails'
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
