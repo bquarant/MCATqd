@@ -6,8 +6,13 @@
 	<% end %>
 	<p id="notice"><%= notice %></p>
 </div>
-<div class="well span4">
+<div class="span4">
 <h3><%= @profile.first_name %> <%= @profile.last_name %> 
+		<!--Badges-->
+		<!-- Admin Badge -->
+		<% if @user.is_admin == 1 %><span style="color: red; font-size: 14px;">[A]</span><%else%><%end%>
+		<!-- Contributor Badge -->
+		<!-- TODO: Flag user if submitted a question-->
 	<br>
 	<small><%= @user.email %></small>
 </h3>
@@ -21,4 +26,3 @@
 </div>
 </p>
 </div>
-
