@@ -73,3 +73,13 @@ u.save
 --A negative emf
 --A positive enthalpy
 --A negative enthalpy
+
+-Which of the following is the unit for Joule (J)?
+--(kg * m^2) / s^2*
+---Correct! Joules are the unit that you're most likely to encounter when dealing with Kinetic Energy problems, and you should know the formula KE = 1/2 mv^2. If you use unit analysis here, you get (m -> kg * v^2 -> m^2/s^2)
+--(kg * m) / s^2
+---Joules are the unit that you're most likely to encounter when dealing with Kinetic Energy problems, and you should know the formula KE = 1/2 mv^2. If you use unit analysis here, you get (m -> kg * v^2 -> m^2/s^2). This answer is missing the second meters unit from the velocity squared term.
+--(kg * m^2) / s
+---Joules are the unit that you're most likely to encounter when dealing with Kinetic Energy problems, and you should know the formula KE = 1/2 mv^2. If you use unit analysis here, you get (m -> kg * v^2 -> m^2/s^2). This  answer is missing the second seconds unit from the velocity squared term.
+--(kg * m^2) / 2 s^2
+---
